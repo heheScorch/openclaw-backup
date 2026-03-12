@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "451883a0-c4b3-46bf-93ae-50f4eae9bc99",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "name": "steam-top20-morning",
+      "enabled": true,
+      "createdAtMs": 1773307286697,
+      "updatedAtMs": 1773307286697,
+      "schedule": {
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请运行 /root/.openclaw/scripts/steam_top30_full.js 脚本获取最新SteamTOP20数据，然后按格式：\n\n🎮 Steam 最热玩游戏 TOP 20\n\n🥇 #1 游戏名\n👥 当前: xxx | 📈 峰值: xxx\n\n依次列出前20名游戏。排序按当前在线人数。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "5220650531",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1773363600000
+      }
+    },
+    {
+      "id": "2e1bf489-e001-4be6-b844-2253eda2d95a",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "name": "steam-top20-evening",
+      "enabled": true,
+      "createdAtMs": 1773307296199,
+      "updatedAtMs": 1773307296199,
+      "schedule": {
+        "expr": "0 21 * * *",
+        "tz": "Asia/Shanghai",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请运行 /root/.openclaw/scripts/steam_top30_full.js 脚本获取最新SteamTOP20数据，然后按格式：\n\n🎮 Steam 最热玩游戏 TOP 20\n\n🥇 #1 游戏名\n👥 当前: xxx | 📈 峰值: xxx\n\n依次列出前20名游戏。排序按当前在线人数。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "5220650531",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1773320400000
+      }
+    },
+    {
+      "id": "4e05aa85-f8f6-49cc-bdb3-72192a851135",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "name": "daily-backup",
+      "enabled": true,
+      "createdAtMs": 1773307475894,
+      "updatedAtMs": 1773307475894,
+      "schedule": {
+        "expr": "0 10 * * *",
+        "tz": "Asia/Shanghai",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请执行以下操作：\n1. 运行 /root/.openclaw/scripts/backup.sh 创建备份\n2. 找到最新的备份文件（/root/.openclaw/backups/）\n3. 把备份文件发给我"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "5220650531",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1773367200000
+      }
+    }
+  ]
+}
