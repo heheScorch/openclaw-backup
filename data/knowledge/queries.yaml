@@ -1,0 +1,14 @@
+# 查询知识库
+
+examples:
+  - name: 港股网易股价
+    description: 查询网易港股(9999.HK)实时或收盘价格
+    source: https://finance.yahoo.com/quote/9999.HK
+    query_method: 搜索 "网易港股 9999 股价" 或访问 Yahoo Finance
+    updated: 2026-03-12
+    
+  - name: Steam热门游戏
+    description: Steam当前在线人数前20的游戏
+    source: https://api.steampowered.com/ISteamChartsService/GetMostPlayedGames/v1/
+    query_method: 调用 Steam 官方 API 获取最热玩游戏榜单
+    updated: 2026-03-12

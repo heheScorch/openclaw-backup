@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.8",
-    "lastTouchedAt": "2026-03-12T05:09:49.855Z"
+    "lastTouchedAt": "2026-03-12T10:15:33.501Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-12T05:04:29.512Z",
@@ -103,7 +103,13 @@
   "gateway": {
     "port": 18789,
     "mode": "local",
-    "bind": "loopback",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789"
+      ]
+    },
     "auth": {
       "mode": "token",
       "token": "6cdb42002a0192623772760760bff9d1ce84b7955bc7c551"

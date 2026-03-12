@@ -9,6 +9,7 @@ cp /root/.openclaw/openclaw.json "$BACKUP_DIR/"
 cp /root/.openclaw/cron/jobs.json "$BACKUP_DIR/"
 cp -r /root/.openclaw/scripts "$BACKUP_DIR/"
 cp -r /root/.openclaw/data "$BACKUP_DIR/"
+cp -r /root/.openclaw/data/knowledge "$BACKUP_DIR/"
 
 # Commit and push
 cd "$BACKUP_DIR"

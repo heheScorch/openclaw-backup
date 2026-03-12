@@ -64,7 +64,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1773307475894,
-      "updatedAtMs": 1773307475894,
+      "updatedAtMs": 1773307996419,
       "schedule": {
         "expr": "0 10 * * *",
         "tz": "Asia/Shanghai",
@@ -74,7 +74,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请执行以下操作：\n1. 运行 /root/.openclaw/scripts/backup.sh 创建备份\n2. 找到最新的备份文件（/root/.openclaw/backups/）\n3. 把备份文件发给我"
+        "message": "请执行 /root/.openclaw/scripts/backup_to_github.sh 脚本，它会自动备份并推送到 GitHub。完成后告诉我 \"每日备份已完成\""
       },
       "delivery": {
         "mode": "announce",
@@ -83,6 +83,34 @@
       },
       "state": {
         "nextRunAtMs": 1773367200000
+      }
+    },
+    {
+      "id": "9d7e37e7-f5d3-4c55-aa93-e77ae0f857f1",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "name": "hangzhou-weather-morning",
+      "enabled": true,
+      "createdAtMs": 1773313444113,
+      "updatedAtMs": 1773313444113,
+      "schedule": {
+        "expr": "0 7 * * *",
+        "tz": "Asia/Shanghai",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请运行 /root/.openclaw/scripts/weather_hangzhou.js 脚本获取杭州天气，直接把结果发给我即可"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "5220650531",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1773356400000
       }
     }
   ]
