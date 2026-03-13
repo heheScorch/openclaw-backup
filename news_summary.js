@@ -10,61 +10,54 @@ function fetchUrl(url) {
   });
 }
 
-function extractNews(html, source, minLen = 15, maxLen = 80) {
-  const news = [];
-  // Simple regex to extract titles and links
-  const linkPattern = /<a[^>]+href="([^"]+)"[^>]*>([^<]{5,100})<\/a>/g;
-  let match;
-  while ((match = linkPattern.exec(html)) !== null) {
-    const url = match[1];
-    const title = match[2].replace(/<[^>]+>/g, '').trim();
-    if (title.length >= minLen && title.length <= maxLen && !title.includes('undefined')) {
-      news.push({ source, title, url });
-    }
-  }
-  return news;
-}
-
 async function main() {
   const allNews = [];
   
   try {
-    // 新浪财经
+    // 新浪财经 - 股票新闻
     const sina = await fetchUrl('https://finance.sina.com.cn/stock/');
     if (sina) {
-      const sinaNews = extractNews(sina, '新浪财经');
-      allNews.push(...sinaNews);
+      // Extract article links with their titles
+      const pattern = /<a[^>]+href="(https?:\/\/finance\.sina\.com\.cn\/stock\/[^"]+)"[^>]*>([^<]{15,80})<\/a>/g;
+      let match;
+      while ((match = pattern.exec(sina)) !== null) {
+        if (!match[1].includes('//')) continue;
+        allNews.push({ source: '新浪财经', title: match[2].trim(), url: match[1] });
+      }
     }
     
-    // 东方财富
+    // 东方财富 - 新闻
     const eastmoney = await fetchUrl('https://www.eastmoney.com/');
     if (eastmoney) {
-      const emNews = extractNews(eastmoney, '东方财富');
-      allNews.push(...emNews);
+      const pattern = /<a[^>]+href="(https?:\/\/[^"]+\.eastmoney\.com\/[^"]+)"[^>]*>([^<]{15,80})<\/a>/g;
+      let match;
+      while ((match = pattern.exec(eastmoney)) !== null) {
+        if (match[1].includes('quote') || match[1].includes('data')) continue;
+        allNews.push({ source: '东方财富', title: match[2].trim(), url: match[1] });
+      }
     }
     
-    // 华尔街见闻
-    const wsjcn = await fetchUrl('https://www.wallstreetcn.com/');
-    if (wsjcn) {
-      const wsjNews = extractNews(wsjcn, '华尔街见闻');
-      allNews.push(...wsjNews);
+    // 财联社
+    const cls = await fetchUrl('https://www.cls.cn/');
+    if (cls) {
+      const pattern = /<a[^>]+href="(https?:\/\/www\.cls\.cn\/[^"]+)"[^>]*>([^<]{15,80})<\/a>/g;
+      let match;
+      while ((match = pattern.exec(cls)) !== null) {
+        allNews.push({ source: '财联社', title: match[2].trim(), url: match[1] });
+      }
     }
     
   } catch (e) {
     console.log('Error:', e.message);
   }
   
-  // Deduplicate and clean
+  // Deduplicate
   const seen = new Set();
   const unique = [];
   for (const n of allNews) {
-    const key = n.title.substring(0, 20);
-    if (!seen.has(key)) {
+    const key = n.title.substring(0, 25);
+    if (!seen.has(key) && n.url && n.url.length > 50) {
       seen.add(key);
-      // Clean URL
-      if (n.url && !n.url.startsWith('http')) {
-        n.url = 'https://' + n.url;
-      }
       unique.push(n);
     }
   }
@@ -82,16 +75,14 @@ async function main() {
   if (result.length > 0) {
     result.forEach((n, i) => {
       msg += `${i + 1}. ${n.title}\n`;
-      if (n.url) {
-        msg += `   🔗 ${n.url}\n`;
-      }
+      msg += `   🔗 ${n.url}\n`;
       msg += `   📍 ${n.source}\n\n`;
     });
   } else {
     msg += '暂无新闻数据\n';
   }
   
-  msg += '— 新闻来源：新浪财经、东方财富、华尔街见闻';
+  msg += '— 新闻来源：新浪财经、东方财富、财联社';
   console.log(msg);
 }
 
