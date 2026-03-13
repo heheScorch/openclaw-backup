@@ -1,12 +1,12 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.8",
-    "lastTouchedAt": "2026-03-12T10:15:33.501Z"
+    "lastTouchedAt": "2026-03-12T14:51:48.238Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-12T05:04:29.512Z",
+    "lastRunAt": "2026-03-12T14:51:48.201Z",
     "lastRunVersion": "2026.3.8",
-    "lastRunCommand": "onboard",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
   "auth": {
@@ -69,10 +69,8 @@
     "profile": "coding",
     "web": {
       "search": {
-        "provider": "gemini",
-        "gemini": {
-          "apiKey": "AIzaSyCyhu_eMd627cWDu1EVPCYzdqpWGQgmCyg"
-        }
+        "provider": "brave",
+        "apiKey": "BSAoyw7VZu9SA7E6tNnQ8COKczuJAzN"
       }
     }
   },

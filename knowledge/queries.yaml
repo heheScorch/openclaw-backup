@@ -1,14 +1,107 @@
-# 查询知识库
+# 中国A股和基金实时行情查询方法
 
-examples:
-  - name: 港股网易股价
-    description: 查询网易港股(9999.HK)实时或收盘价格
-    source: https://finance.yahoo.com/quote/9999.HK
-    query_method: 搜索 "网易港股 9999 股价" 或访问 Yahoo Finance
-    updated: 2026-03-12
-    
-  - name: Steam热门游戏
-    description: Steam当前在线人数前20的游戏
-    source: https://api.steampowered.com/ISteamChartsService/GetMostPlayedGames/v1/
-    query_method: 调用 Steam 官方 API 获取最热玩游戏榜单
-    updated: 2026-03-12
+## 1. 常用免费API接口
+
+### 新浪财经 API（最常用，无需API Key）
+- **股票实时行情**：`https://hq.sinajs.cn/list=sh600000`（上海）/`sz000001`（深圳）
+- **大盘指数**：`https://hq.sinajs.cn/list=s_sh000001`（上证指数）/`s_sz399001`（深证成指）
+- **基金净值**：`https://hq.sinajs.cn/list=f_161039`（示例：易方达增强回报）
+- 返回格式：纯文本，需要解析
+
+### 腾讯财经 API
+- **股票行情**：`https://qt.gtimg.cn/q=sh600000`（上海）/`sz000001`（深圳）
+- 返回格式：JSON-like，比较好解析
+
+### 东方财富 API
+- **股票行情**：`https://push2.eastmoney.com/api/qt/stock/get?secid=1.600000`（上海）/`0.000001`（深圳）
+- **基金净值**：`https://fund.eastmoney.com/pingzhongdata/161039.js`
+- 返回格式：JSON
+
+### 网易财经 API
+- **股票行情**：`http://quotes.money.163.com/service/chddata.html?code=0600000&start=20200101&end=20201231`
+
+---
+
+## 2. 股票代码格式
+
+| 市场 | 代码前缀 | 示例 | 说明 |
+|------|----------|------|------|
+| 上海主板 | 600, 601, 603 | 600000, 601398, 603259 | 大型蓝筹股 |
+| 深圳主板 | 000, 001 | 000001, 000002 | 主板上市公司 |
+| 创业板 | 300 | 300750, 300059 | 创新型企业 |
+| 科创板 | 688 | 688111, 688981 | 科技创新企业 |
+| 北交所 | 4, 8 | 430001, 830799 | 北京证券交易所 |
+| 沪市基金 | 5xx | 510500, 512880 | 交易所ETF |
+| 深市基金 | 1xx, 1x6 | 159919, 161039 | 场外/场内基金 |
+
+**代码标识前缀**：
+- `sh` 或 `1` = 上海证券交易所
+- `sz` 或 `0` = 深圳证券交易所
+- `bj` = 北京证券交易所
+
+---
+
+## 3. 实时行情查询示例
+
+### Python 示例（使用新浪API）
+```python
+import requests
+
+def get_stock_price(code):
+    # 上海sh600000, 深圳sz000001
+    symbol = f"sh{code}" if code.startswith(('600', '601', '603', '688')) else f"sz{code}"
+    url = f"https://hq.sinajs.cn/list={symbol}"
+    resp = requests.get(url)
+    data = resp.text.split('=')[1].strip('"')
+    fields = ['name', 'open', 'preclose', 'close', 'high', 'low', 'volume', 'amount']
+    return dict(zip(fields, data.split(',')))
+
+price = get_stock_price('600000')
+print(price)
+```
+
+### Shell + curl 示例
+```bash
+# 查询上证指数
+curl -s "https://hq.sinajs.cn/list=s_sh000001"
+
+# 查询单个股票
+curl -s "https://hq.sinajs.cn/list=sh600000"
+
+# 查询基金
+curl -s "https://hq.sinajs.cn/list=f_161039"
+```
+
+---
+
+## 4. 基金查询
+
+### 天天基金网
+- 净值查询：`https://fund.eastmoney.com/pingzhongdata/基金代码.js`
+
+### 基金代码规则
+- 场外基金：6位数字，如 161039（易方达增强回报）
+- 场内基金（ETF）：以 5 开头（沪市）或 1 开头（深市）
+
+---
+
+## 5. 注意事项
+
+1. **频率限制**：免费API有请求频率限制，不要高频调用
+2. **数据延迟**：免费接口通常有15分钟延迟
+3. **用途限制**：仅供个人学习研究，不要用于商业用途
+4. **HTTPS vs HTTP**：部分接口可能需要HTTP（新浪支持HTTPS）
+5. **编码问题**：返回数据可能编码不一致，注意处理UTF-8/GBK
+
+---
+
+## 6. 常用快速查询URL
+
+```
+上证指数: https://hq.sinajs.cn/list=s_sh000001
+深证成指: https://hq.sinajs.cn/list=s_sz399001
+创业板指: https://hq.sinajs.cn/list=s_sz399006
+上证600000: https://hq.sinajs.cn/list=sh600000
+深市000001: https://hq.sinajs.cn/list=sz000001
+科创板688981: https://hq.sinajs.cn/list=sh688981
+```

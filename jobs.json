@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1773307286697,
-      "updatedAtMs": 1773307286697,
+      "updatedAtMs": 1773363685842,
       "schedule": {
         "expr": "0 9 * * *",
         "tz": "Asia/Shanghai",
@@ -26,7 +26,14 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773363600000
+        "nextRunAtMs": 1773450000000,
+        "lastRunAtMs": 1773363600013,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 85829,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -36,7 +43,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1773307296199,
-      "updatedAtMs": 1773307296199,
+      "updatedAtMs": 1773320423049,
       "schedule": {
         "expr": "0 21 * * *",
         "tz": "Asia/Shanghai",
@@ -54,7 +61,14 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773320400000
+        "nextRunAtMs": 1773406800000,
+        "lastRunAtMs": 1773320400014,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 23035,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -82,7 +96,8 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773367200000
+        "nextRunAtMs": 1773367200000,
+        "runningAtMs": 1773367200002
       }
     },
     {
@@ -92,7 +107,7 @@
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1773313444113,
-      "updatedAtMs": 1773313444113,
+      "updatedAtMs": 1773356506196,
       "schedule": {
         "expr": "0 7 * * *",
         "tz": "Asia/Shanghai",
@@ -110,7 +125,14 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773356400000
+        "nextRunAtMs": 1773442800000,
+        "lastRunAtMs": 1773356400013,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 106183,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     }
   ]
