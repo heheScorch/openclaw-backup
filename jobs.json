@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1773307286697,
-      "updatedAtMs": 1773363685842,
+      "updatedAtMs": 1773450056500,
       "schedule": {
         "expr": "0 9 * * *",
         "tz": "Asia/Shanghai",
@@ -26,11 +26,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773450000000,
-        "lastRunAtMs": 1773363600013,
+        "nextRunAtMs": 1773536400000,
+        "lastRunAtMs": 1773450000014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 85829,
+        "lastDurationMs": 56486,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1773307296199,
-      "updatedAtMs": 1773320423049,
+      "updatedAtMs": 1773406913768,
       "schedule": {
         "expr": "0 21 * * *",
         "tz": "Asia/Shanghai",
@@ -61,11 +61,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773406800000,
-        "lastRunAtMs": 1773320400014,
+        "nextRunAtMs": 1773493200000,
+        "lastRunAtMs": 1773406800014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 23035,
+        "lastDurationMs": 113754,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -78,7 +78,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1773307475894,
-      "updatedAtMs": 1773307996419,
+      "updatedAtMs": 1773367291888,
       "schedule": {
         "expr": "0 10 * * *",
         "tz": "Asia/Shanghai",
@@ -96,8 +96,15 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773367200000,
-        "runningAtMs": 1773367200002
+        "nextRunAtMs": 1773453600000,
+        "lastRunAtMs": 1773367200015,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 91873,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "runningAtMs": 1773453600005
       }
     },
     {
@@ -107,7 +114,7 @@
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1773313444113,
-      "updatedAtMs": 1773356506196,
+      "updatedAtMs": 1773442922271,
       "schedule": {
         "expr": "0 7 * * *",
         "tz": "Asia/Shanghai",
@@ -125,14 +132,140 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773442800000,
-        "lastRunAtMs": 1773356400013,
+        "nextRunAtMs": 1773529200000,
+        "lastRunAtMs": 1773442800010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 106183,
+        "lastDurationMs": 122261,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "deedc0b7-2bf0-44a4-90e8-7a20073ef40a",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "name": "openclaw-update-check",
+      "enabled": true,
+      "createdAtMs": 1773368876762,
+      "updatedAtMs": 1773368876762,
+      "schedule": {
+        "everyMs": 259200000,
+        "kind": "every",
+        "anchorMs": 1773368876762
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请检查 OpenClaw 是否有新版本：\n1. 运行 /root/.openclaw/scripts/check_update.sh\n2. 如果有新版本，告诉我更新日志\n3. 问我是否要更新"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "5220650531",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1773628076762
+      }
+    },
+    {
+      "id": "c98729f1-d7c4-46b8-8c2a-cf91a1904ceb",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "name": "daily-global-news-morning",
+      "enabled": true,
+      "createdAtMs": 1773389585679,
+      "updatedAtMs": 1773446559894,
+      "schedule": {
+        "expr": "0 8 * * *",
+        "tz": "Asia/Shanghai",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时（从当前时间往前推算）\n\n## 新闻来源要求\n1. 全球主流媒体：BBC、CNN、Reuters、AP、NYT、WSJ等\n2. 重点区域：亚洲、欧洲、北美洲\n3. 重点领域：科技、财经、政治、国际关系\n\n## 分析维度\n1. 重大事件：列出最重要的5-8条新闻，包含标题、来源、发布时间、简要摘要\n2. 影响分析：每条新闻对相关领域可能产生的影响\n3. 热点趋势：识别当前最主要的新闻热点话题\n\n## 输出格式\n- 使用中文输出\n- 重大新闻列表（按重要性排序）\n- 热点分析总结\n\n## 注意事项\n- 只收集真实新闻，排除推测和分析文章\n- 确保新闻来源的权威性"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "5220650531",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1773532800000,
+        "lastRunAtMs": 1773446400017,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 159877,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "3aa5d3a5-8ed7-4b48-97c0-81036d977321",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "name": "daily-global-news-evening",
+      "enabled": true,
+      "createdAtMs": 1773389593290,
+      "updatedAtMs": 1773403353529,
+      "schedule": {
+        "expr": "0 20 * * *",
+        "tz": "Asia/Shanghai",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时（从当前时间往前推算）\n\n## 新闻来源要求\n1. 全球主流媒体：BBC、CNN、Reuters、AP、NYT、WSJ等\n2. 重点区域：亚洲、欧洲、北美洲\n3. 重点领域：科技、财经、政治、国际关系\n\n## 分析维度\n1. 重大事件：列出最重要的5-8条新闻，包含标题、来源、发布时间、简要摘要\n2. 影响分析：每条新闻对相关领域可能产生的影响\n3. 热点趋势：识别当前最主要的新闻热点话题\n\n## 输出格式\n- 使用中文输出\n- 重大新闻列表（按重要性排序）\n- 热点分析总结\n\n## 注意事项\n- 只收集真实新闻，排除推测和分析文章\n- 确保新闻来源的权威性"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "5220650531",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1773489600000,
+        "lastRunAtMs": 1773403200014,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 153515,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "24478247-a9fd-40f7-a784-913df70eaa48",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "name": "daily-gaming-news-noon",
+      "enabled": true,
+      "createdAtMs": 1773392900588,
+      "updatedAtMs": 1773392900588,
+      "schedule": {
+        "expr": "0 12 * * *",
+        "tz": "Asia/Shanghai",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请帮我收集过去24小时内的游戏行业新闻，具体要求：\n\n## 时间范围\n- 过去24小时\n\n## 指定数据源（优先）\n1. GamesIndustry.biz\n2. GameSpot\n3. IGN\n4. Polygon\n5. Game Developer\n\n## 收集内容\n1. 重大新闻（3A大作、收购并购、财报等）\n2. 公司动态\n3. 市场数据\n4. 产品信息\n\n## 输出格式\n- 中文输出\n- 按重要性排序\n- 每条标注来源\n- 总结3个热点\n\n## 优化要求\n- 搜索结果取前5-8条即可\n- 不需要逐条详细分析\n- 简洁明了"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "5220650531",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1773460800000
       }
     }
   ]
