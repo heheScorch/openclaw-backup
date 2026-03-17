@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1773307286697,
-      "updatedAtMs": 1773622831744,
+      "updatedAtMs": 1773709280999,
       "schedule": {
         "expr": "0 9 * * *",
         "tz": "Asia/Shanghai",
@@ -26,11 +26,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773709200000,
-        "lastRunAtMs": 1773622800012,
+        "nextRunAtMs": 1773795600000,
+        "lastRunAtMs": 1773709200012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 31732,
+        "lastDurationMs": 80987,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1773307296199,
-      "updatedAtMs": 1773579707565,
+      "updatedAtMs": 1773666073224,
       "schedule": {
         "expr": "0 21 * * *",
         "tz": "Asia/Shanghai",
@@ -61,11 +61,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773666000000,
-        "lastRunAtMs": 1773579600016,
+        "nextRunAtMs": 1773752400000,
+        "lastRunAtMs": 1773666000019,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 107549,
+        "lastDurationMs": 73205,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -78,7 +78,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1773307475894,
-      "updatedAtMs": 1773540013642,
+      "updatedAtMs": 1773626524774,
       "schedule": {
         "expr": "0 10 * * *",
         "tz": "Asia/Shanghai",
@@ -96,15 +96,15 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773626400000,
-        "lastRunAtMs": 1773540000011,
+        "nextRunAtMs": 1773712800000,
+        "lastRunAtMs": 1773626400011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 13631,
+        "lastDurationMs": 124763,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1773626400003
+        "runningAtMs": 1773712800005
       }
     },
     {
@@ -114,7 +114,7 @@
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1773313444113,
-      "updatedAtMs": 1773615726962,
+      "updatedAtMs": 1773702024960,
       "schedule": {
         "expr": "0 7 * * *",
         "tz": "Asia/Shanghai",
@@ -132,11 +132,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773702000000,
-        "lastRunAtMs": 1773615600011,
+        "nextRunAtMs": 1773788400000,
+        "lastRunAtMs": 1773702000015,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 126951,
+        "lastDurationMs": 24945,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -149,7 +149,7 @@
       "name": "openclaw-update-check",
       "enabled": true,
       "createdAtMs": 1773368876762,
-      "updatedAtMs": 1773368876762,
+      "updatedAtMs": 1773628112926,
       "schedule": {
         "everyMs": 259200000,
         "kind": "every",
@@ -167,7 +167,14 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773628076762
+        "nextRunAtMs": 1773887276773,
+        "lastRunAtMs": 1773628076773,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 36153,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -177,7 +184,7 @@
       "name": "daily-global-news-morning",
       "enabled": true,
       "createdAtMs": 1773389585679,
-      "updatedAtMs": 1773619582214,
+      "updatedAtMs": 1773705750853,
       "schedule": {
         "expr": "0 8 * * *",
         "tz": "Asia/Shanghai",
@@ -195,11 +202,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773705600000,
-        "lastRunAtMs": 1773619200013,
+        "nextRunAtMs": 1773792000000,
+        "lastRunAtMs": 1773705600012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 382201,
+        "lastDurationMs": 150841,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -212,7 +219,7 @@
       "name": "daily-global-news-evening",
       "enabled": true,
       "createdAtMs": 1773389593290,
-      "updatedAtMs": 1773576195002,
+      "updatedAtMs": 1773662728892,
       "schedule": {
         "expr": "0 20 * * *",
         "tz": "Asia/Shanghai",
@@ -230,11 +237,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773662400000,
-        "lastRunAtMs": 1773576000014,
+        "nextRunAtMs": 1773748800000,
+        "lastRunAtMs": 1773662400016,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 194988,
+        "lastDurationMs": 328876,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -247,7 +254,7 @@
       "name": "daily-gaming-news-noon",
       "enabled": true,
       "createdAtMs": 1773392900588,
-      "updatedAtMs": 1773547346586,
+      "updatedAtMs": 1773633765660,
       "schedule": {
         "expr": "0 12 * * *",
         "tz": "Asia/Shanghai",
@@ -265,11 +272,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773633600000,
-        "lastRunAtMs": 1773547200015,
+        "nextRunAtMs": 1773720000000,
+        "lastRunAtMs": 1773633600012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 146571,
+        "lastDurationMs": 165648,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
