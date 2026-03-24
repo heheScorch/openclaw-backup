@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1773307286697,
-      "updatedAtMs": 1774314216780,
+      "updatedAtMs": 1774359370596,
       "schedule": {
         "expr": "0 9 * * *",
         "tz": "Asia/Shanghai",
@@ -27,13 +27,13 @@
       },
       "state": {
         "nextRunAtMs": 1774400400000,
-        "lastRunAtMs": 1774314000013,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 216767,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "lastRunAtMs": 1774359335814,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 34782,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Unsupported channel: telegram"
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1773307296199,
-      "updatedAtMs": 1774270848367,
+      "updatedAtMs": 1774359402957,
       "schedule": {
         "expr": "0 21 * * *",
         "tz": "Asia/Shanghai",
@@ -61,14 +61,14 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1774357200000,
-        "lastRunAtMs": 1774270800010,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 48357,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774443600000,
+        "lastRunAtMs": 1774359370749,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 32208,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Unsupported channel: telegram"
       }
     },
     {
@@ -96,7 +96,7 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1774317600000,
+        "nextRunAtMs": 1774404000000,
         "lastRunAtMs": 1774231200016,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
@@ -104,7 +104,7 @@
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1774317600004
+        "runningAtMs": 1774359553421
       }
     },
     {
@@ -114,7 +114,7 @@
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1773313444113,
-      "updatedAtMs": 1774306815939,
+      "updatedAtMs": 1774359413115,
       "schedule": {
         "expr": "0 7 * * *",
         "tz": "Asia/Shanghai",
@@ -133,13 +133,13 @@
       },
       "state": {
         "nextRunAtMs": 1774393200000,
-        "lastRunAtMs": 1774306800011,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 15928,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "lastRunAtMs": 1774359402975,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 10140,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Unsupported channel: telegram"
       }
     },
     {
@@ -184,7 +184,7 @@
       "name": "daily-global-news-morning",
       "enabled": true,
       "createdAtMs": 1773389585679,
-      "updatedAtMs": 1774310852237,
+      "updatedAtMs": 1774359471394,
       "schedule": {
         "expr": "0 8 * * *",
         "tz": "Asia/Shanghai",
@@ -203,13 +203,13 @@
       },
       "state": {
         "nextRunAtMs": 1774396800000,
-        "lastRunAtMs": 1774310400016,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 452221,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "lastRunAtMs": 1774359413131,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 58263,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Unsupported channel: telegram"
       }
     },
     {
@@ -219,7 +219,7 @@
       "name": "daily-global-news-evening",
       "enabled": true,
       "createdAtMs": 1773389593290,
-      "updatedAtMs": 1774267263781,
+      "updatedAtMs": 1774359523309,
       "schedule": {
         "expr": "0 20 * * *",
         "tz": "Asia/Shanghai",
@@ -237,14 +237,14 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1774353600000,
-        "lastRunAtMs": 1774267200015,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 63766,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774440000000,
+        "lastRunAtMs": 1774359471420,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 51889,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Unsupported channel: telegram"
       }
     },
     {
@@ -254,7 +254,7 @@
       "name": "daily-gaming-news-noon",
       "enabled": true,
       "createdAtMs": 1773392900588,
-      "updatedAtMs": 1774238845144,
+      "updatedAtMs": 1774359553384,
       "schedule": {
         "expr": "0 12 * * *",
         "tz": "Asia/Shanghai",
@@ -272,15 +272,14 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1774324800000,
-        "lastRunAtMs": 1774238400015,
+        "nextRunAtMs": 1774411200000,
+        "lastRunAtMs": 1774359523381,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 445129,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "terminated"
+        "lastDurationMs": 30003,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
+        "lastError": "Unsupported channel: telegram"
       }
     }
   ]
