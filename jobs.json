@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1773307286697,
-      "updatedAtMs": 1774359370596,
+      "updatedAtMs": 1774359973406,
       "schedule": {
         "expr": "0 9 * * *",
         "tz": "Asia/Shanghai",
@@ -27,13 +27,13 @@
       },
       "state": {
         "nextRunAtMs": 1774400400000,
-        "lastRunAtMs": 1774359335814,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 34782,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "Unsupported channel: telegram"
+        "lastRunAtMs": 1774359949744,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 23662,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1773307296199,
-      "updatedAtMs": 1774359402957,
+      "updatedAtMs": 1774359996949,
       "schedule": {
         "expr": "0 21 * * *",
         "tz": "Asia/Shanghai",
@@ -62,13 +62,13 @@
       },
       "state": {
         "nextRunAtMs": 1774443600000,
-        "lastRunAtMs": 1774359370749,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 32208,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "Unsupported channel: telegram"
+        "lastRunAtMs": 1774359973426,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 23523,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -78,7 +78,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1773307475894,
-      "updatedAtMs": 1774231240111,
+      "updatedAtMs": 1774359559210,
       "schedule": {
         "expr": "0 10 * * *",
         "tz": "Asia/Shanghai",
@@ -97,14 +97,13 @@
       },
       "state": {
         "nextRunAtMs": 1774404000000,
-        "lastRunAtMs": 1774231200016,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 40095,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1774359553421
+        "lastRunAtMs": 1774359553421,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 5789,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "runningAtMs": 1774359996969
       }
     },
     {
