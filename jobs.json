@@ -4,11 +4,11 @@
     {
       "id": "451883a0-c4b3-46bf-93ae-50f4eae9bc99",
       "agentId": "main",
-      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1773307286697,
-      "updatedAtMs": 1774314216780,
+      "updatedAtMs": 1774400708163,
       "schedule": {
         "expr": "0 9 * * *",
         "tz": "Asia/Shanghai",
@@ -26,11 +26,11 @@
         "channel": "openclaw-weixin"
       },
       "state": {
-        "nextRunAtMs": 1774400400000,
-        "lastRunAtMs": 1774314000013,
+        "nextRunAtMs": 1774486800000,
+        "lastRunAtMs": 1774400400042,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 216767,
+        "lastDurationMs": 308121,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -39,11 +39,11 @@
     {
       "id": "2e1bf489-e001-4be6-b844-2253eda2d95a",
       "agentId": "main",
-      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1773307296199,
-      "updatedAtMs": 1774270848367,
+      "updatedAtMs": 1774398749776,
       "schedule": {
         "expr": "0 21 * * *",
         "tz": "Asia/Shanghai",
@@ -61,11 +61,11 @@
         "channel": "openclaw-weixin"
       },
       "state": {
-        "nextRunAtMs": 1774357200000,
-        "lastRunAtMs": 1774270800010,
+        "nextRunAtMs": 1774443600000,
+        "lastRunAtMs": 1774398594117,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 48357,
+        "lastDurationMs": 155659,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -74,11 +74,11 @@
     {
       "id": "4e05aa85-f8f6-49cc-bdb3-72192a851135",
       "agentId": "main",
-      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1773307475894,
-      "updatedAtMs": 1774231240111,
+      "updatedAtMs": 1774398391899,
       "schedule": {
         "expr": "0 10 * * *",
         "tz": "Asia/Shanghai",
@@ -96,25 +96,25 @@
         "channel": "openclaw-weixin"
       },
       "state": {
-        "nextRunAtMs": 1774317600000,
-        "lastRunAtMs": 1774231200016,
+        "nextRunAtMs": 1774404000000,
+        "lastRunAtMs": 1774398381457,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 40095,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 10442,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1774398381447
+        "runningAtMs": 1774404000001
       }
     },
     {
       "id": "9d7e37e7-f5d3-4c55-aa93-e77ae0f857f1",
       "agentId": "main",
-      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1773313444113,
-      "updatedAtMs": 1774306815939,
+      "updatedAtMs": 1774398529947,
       "schedule": {
         "expr": "0 7 * * *",
         "tz": "Asia/Shanghai",
@@ -132,11 +132,11 @@
         "channel": "openclaw-weixin"
       },
       "state": {
-        "nextRunAtMs": 1774393200000,
-        "lastRunAtMs": 1774306800011,
+        "nextRunAtMs": 1774479600000,
+        "lastRunAtMs": 1774398519437,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 15928,
+        "lastDurationMs": 10510,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -145,7 +145,7 @@
     {
       "id": "deedc0b7-2bf0-44a4-90e8-7a20073ef40a",
       "agentId": "main",
-      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
       "name": "openclaw-update-check",
       "enabled": true,
       "createdAtMs": 1773368876762,
@@ -180,7 +180,7 @@
     {
       "id": "c98729f1-d7c4-46b8-8c2a-cf91a1904ceb",
       "agentId": "main",
-      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
       "name": "daily-global-news-morning",
       "enabled": true,
       "createdAtMs": 1773389585679,
@@ -215,11 +215,11 @@
     {
       "id": "3aa5d3a5-8ed7-4b48-97c0-81036d977321",
       "agentId": "main",
-      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
       "name": "daily-global-news-evening",
       "enabled": true,
       "createdAtMs": 1773389593290,
-      "updatedAtMs": 1774267263781,
+      "updatedAtMs": 1774398594117,
       "schedule": {
         "expr": "0 20 * * *",
         "tz": "Asia/Shanghai",
@@ -237,24 +237,24 @@
         "channel": "openclaw-weixin"
       },
       "state": {
-        "nextRunAtMs": 1774353600000,
-        "lastRunAtMs": 1774267200015,
+        "nextRunAtMs": 1774440000000,
+        "lastRunAtMs": 1774398554191,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 63766,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
+        "lastDurationMs": 39926,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
     },
     {
       "id": "24478247-a9fd-40f7-a784-913df70eaa48",
       "agentId": "main",
-      "sessionKey": "agent:main:telegram:direct:5220650531",
+      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
       "name": "daily-gaming-news-noon",
       "enabled": true,
       "createdAtMs": 1773392900588,
-      "updatedAtMs": 1774238845144,
+      "updatedAtMs": 1774398554191,
       "schedule": {
         "expr": "0 12 * * *",
         "tz": "Asia/Shanghai",
@@ -272,14 +272,14 @@
         "channel": "openclaw-weixin"
       },
       "state": {
-        "nextRunAtMs": 1774324800000,
-        "lastRunAtMs": 1774238400015,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 445129,
+        "nextRunAtMs": 1774411200000,
+        "lastRunAtMs": 1774398541983,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 12208,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1
+        "consecutiveErrors": 0
       }
     }
   ]
