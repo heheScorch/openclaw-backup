@@ -22,8 +22,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "5220650531",
-        "channel": "telegram"
+        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
+        "channel": "openclaw-weixin"
       },
       "state": {
         "nextRunAtMs": 1774400400000,
@@ -57,8 +57,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "5220650531",
-        "channel": "telegram"
+        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
+        "channel": "openclaw-weixin"
       },
       "state": {
         "nextRunAtMs": 1774357200000,
@@ -92,8 +92,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "5220650531",
-        "channel": "telegram"
+        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
+        "channel": "openclaw-weixin"
       },
       "state": {
         "nextRunAtMs": 1774317600000,
@@ -104,7 +104,7 @@
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1774360619051
+        "runningAtMs": 1774398381447
       }
     },
     {
@@ -128,8 +128,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "5220650531",
-        "channel": "telegram"
+        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
+        "channel": "openclaw-weixin"
       },
       "state": {
         "nextRunAtMs": 1774393200000,
@@ -163,8 +163,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "5220650531",
-        "channel": "telegram"
+        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
+        "channel": "openclaw-weixin"
       },
       "state": {
         "nextRunAtMs": 1774405676794,
@@ -184,7 +184,7 @@
       "name": "daily-global-news-morning",
       "enabled": true,
       "createdAtMs": 1773389585679,
-      "updatedAtMs": 1774310852237,
+      "updatedAtMs": 1774398261298,
       "schedule": {
         "expr": "0 8 * * *",
         "tz": "Asia/Shanghai",
@@ -198,18 +198,18 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "5220650531",
-        "channel": "telegram"
+        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
+        "channel": "openclaw-weixin"
       },
       "state": {
-        "nextRunAtMs": 1774396800000,
-        "lastRunAtMs": 1774310400016,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 452221,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774483200000,
+        "lastRunAtMs": 1774398115233,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 146065,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Unsupported channel: telegram"
       }
     },
     {
@@ -233,8 +233,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "5220650531",
-        "channel": "telegram"
+        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
+        "channel": "openclaw-weixin"
       },
       "state": {
         "nextRunAtMs": 1774353600000,
@@ -268,8 +268,8 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "5220650531",
-        "channel": "telegram"
+        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
+        "channel": "openclaw-weixin"
       },
       "state": {
         "nextRunAtMs": 1774324800000,

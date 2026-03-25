@@ -87,16 +87,6 @@
     "dmScope": "main"
   },
   "channels": {
-    "telegram": {
-      "enabled": true,
-      "dmPolicy": "pairing",
-      "botToken": "8609870200:AAFj8oy6BRtEv1fvhpgjSEajVD2CxC4qfko",
-      "allowFrom": [
-        "5220650531"
-      ],
-      "groupPolicy": "allowlist",
-      "streaming": "partial"
-    },
     "openclaw-weixin": {
       "accounts": {}
     }
@@ -133,13 +123,9 @@
   },
   "plugins": {
     "allow": [
-      "openclaw-weixin",
-      "telegram"
+      "openclaw-weixin"
     ],
     "entries": {
-      "telegram": {
-        "enabled": true
-      },
       "brave": {
         "enabled": true,
         "config": {
