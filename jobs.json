@@ -2,17 +2,17 @@
   "version": 1,
   "jobs": [
     {
-      "id": "451883a0-c4b3-46bf-93ae-50f4eae9bc99",
+      "id": "68d8ead3-9dae-4218-8ffd-08d33b8d2870",
       "agentId": "main",
-      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
+      "sessionKey": "agent:main:main",
       "name": "steam-top20-morning",
       "enabled": true,
-      "createdAtMs": 1773307286697,
-      "updatedAtMs": 1774400708163,
+      "createdAtMs": 1774508122251,
+      "updatedAtMs": 1774508122251,
       "schedule": {
+        "kind": "cron",
         "expr": "0 9 * * *",
-        "tz": "Asia/Shanghai",
-        "kind": "cron"
+        "tz": "Asia/Shanghai"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -22,32 +22,25 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
-        "channel": "openclaw-weixin"
+        "channel": "telegram",
+        "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774486800000,
-        "lastRunAtMs": 1774400400042,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 308121,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774573200000
       }
     },
     {
-      "id": "2e1bf489-e001-4be6-b844-2253eda2d95a",
+      "id": "88dd117b-d1bb-4e47-b870-f6bad2486266",
       "agentId": "main",
-      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
+      "sessionKey": "agent:main:main",
       "name": "steam-top20-evening",
       "enabled": true,
-      "createdAtMs": 1773307296199,
-      "updatedAtMs": 1774398749776,
+      "createdAtMs": 1774508122268,
+      "updatedAtMs": 1774508122268,
       "schedule": {
+        "kind": "cron",
         "expr": "0 21 * * *",
-        "tz": "Asia/Shanghai",
-        "kind": "cron"
+        "tz": "Asia/Shanghai"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -57,68 +50,25 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
-        "channel": "openclaw-weixin"
+        "channel": "telegram",
+        "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774443600000,
-        "lastRunAtMs": 1774398594117,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 155659,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774530000000
       }
     },
     {
-      "id": "4e05aa85-f8f6-49cc-bdb3-72192a851135",
+      "id": "fa4124ab-d9dc-410d-a1f3-c7075a7f06c1",
       "agentId": "main",
-      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
-      "name": "daily-backup",
-      "enabled": true,
-      "createdAtMs": 1773307475894,
-      "updatedAtMs": 1774398391899,
-      "schedule": {
-        "expr": "0 10 * * *",
-        "tz": "Asia/Shanghai",
-        "kind": "cron"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "请执行 /root/.openclaw/scripts/backup_to_github.sh 脚本，它会自动备份并推送到 GitHub。完成后告诉我 \"每日备份已完成\""
-      },
-      "delivery": {
-        "mode": "announce",
-        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
-        "channel": "openclaw-weixin"
-      },
-      "state": {
-        "nextRunAtMs": 1774404000000,
-        "lastRunAtMs": 1774398381457,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 10442,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1774404000001
-      }
-    },
-    {
-      "id": "9d7e37e7-f5d3-4c55-aa93-e77ae0f857f1",
-      "agentId": "main",
-      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
+      "sessionKey": "agent:main:main",
       "name": "hangzhou-weather-morning",
       "enabled": true,
-      "createdAtMs": 1773313444113,
-      "updatedAtMs": 1774398529947,
+      "createdAtMs": 1774508122285,
+      "updatedAtMs": 1774508122285,
       "schedule": {
+        "kind": "cron",
         "expr": "0 7 * * *",
-        "tz": "Asia/Shanghai",
-        "kind": "cron"
+        "tz": "Asia/Shanghai"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -128,67 +78,53 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
-        "channel": "openclaw-weixin"
+        "channel": "telegram",
+        "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774479600000,
-        "lastRunAtMs": 1774398519437,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 10510,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774566000000
       }
     },
     {
-      "id": "deedc0b7-2bf0-44a4-90e8-7a20073ef40a",
+      "id": "bf053c01-36f8-4d4e-a170-874f6d74d0e5",
       "agentId": "main",
-      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
-      "name": "openclaw-update-check",
+      "sessionKey": "agent:main:main",
+      "name": "daily-backup",
       "enabled": true,
-      "createdAtMs": 1773368876762,
-      "updatedAtMs": 1774146553408,
+      "createdAtMs": 1774508122299,
+      "updatedAtMs": 1774508122299,
       "schedule": {
-        "everyMs": 259200000,
-        "kind": "every",
-        "anchorMs": 1773368876762
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "tz": "Asia/Shanghai"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请检查 OpenClaw 是否有新版本：\n1. 运行 /root/.openclaw/scripts/check_update.sh\n2. 如果有新版本，告诉我更新日志\n3. 问我是否要更新"
+        "message": "请执行 /root/.openclaw/scripts/backup_to_github.sh 脚本，它会自动备份并推送到 GitHub。完成后告诉我 \"每日备份已完成\""
       },
       "delivery": {
         "mode": "announce",
-        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
-        "channel": "openclaw-weixin"
+        "channel": "telegram",
+        "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774405676794,
-        "lastRunAtMs": 1774146476794,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 76614,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774576800000
       }
     },
     {
-      "id": "c98729f1-d7c4-46b8-8c2a-cf91a1904ceb",
+      "id": "b9805115-63da-486e-af96-54971c3a4a3f",
       "agentId": "main",
-      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
+      "sessionKey": "agent:main:main",
       "name": "daily-global-news-morning",
       "enabled": true,
-      "createdAtMs": 1773389585679,
-      "updatedAtMs": 1774398261298,
+      "createdAtMs": 1774508122308,
+      "updatedAtMs": 1774508122308,
       "schedule": {
+        "kind": "cron",
         "expr": "0 8 * * *",
-        "tz": "Asia/Shanghai",
-        "kind": "cron"
+        "tz": "Asia/Shanghai"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -198,67 +134,53 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
-        "channel": "openclaw-weixin"
+        "channel": "telegram",
+        "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774483200000,
-        "lastRunAtMs": 1774398115233,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 146065,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "Unsupported channel: telegram"
+        "nextRunAtMs": 1774569600000
       }
     },
     {
-      "id": "3aa5d3a5-8ed7-4b48-97c0-81036d977321",
+      "id": "2de7bc69-83ef-4bf3-b3fc-a2782cae696b",
       "agentId": "main",
-      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
+      "sessionKey": "agent:main:main",
       "name": "daily-global-news-evening",
       "enabled": true,
-      "createdAtMs": 1773389593290,
-      "updatedAtMs": 1774398594117,
+      "createdAtMs": 1774508122321,
+      "updatedAtMs": 1774508122321,
       "schedule": {
+        "kind": "cron",
         "expr": "0 20 * * *",
-        "tz": "Asia/Shanghai",
-        "kind": "cron"
+        "tz": "Asia/Shanghai"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时（从当前时间往前推算）\n\n## 新闻来源要求\n1. 全球主流媒体：BBC、CNN、Reuters、AP、NYT、WSJ等\n2. 重点区域：亚洲、欧洲、北美洲\n3. 重点领域：科技、财经、政治、国际关系\n\n## 分析维度\n1. 重大事件：列出最重要的5-8条新闻，包含标题、来源、发布时间、简要摘要\n2. 影响分析：每条新闻对相关领域可能产生的影响\n3. 热点趋势：识别当前最主要的新闻热点话题\n\n## 输出格式\n- 使用中文输出\n- 重大新闻列表（按重要性排序）\n- 热点分析总结\n\n## 注意事项\n- 只收集真实新闻，排除推测和分析文章\n- 确保新闻来源的权威性"
+        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时（从当前时间往前推算）\n\n## 新闻来源要求\n1. 全球主流媒体：BBC、CNN、Reuters、AP、NYT、WSJ等\n2. 重点区域：亚洲、欧洲、北美洲\n3. 重点领域：科技、财经、政治、国际关系\n\n## 分析维度\n1. 重大事件：列出最重要的5-8条新闻，包含标题、来源、发布时间、简要摘要\n2. 影响分析：每条新闻对相关领域可能产生的影响\n3. 热点趋势：识别当前最主要的新闻热点话题\n\n## 输出格式\n- 使用中文输出\n- 重大新闻列表（按重要性排序）\n 热点分析总结\n\n## 注意事项\n- 只收集真实新闻，排除推测和分析文章\n- 确保新闻来源的权威性"
       },
       "delivery": {
         "mode": "announce",
-        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
-        "channel": "openclaw-weixin"
+        "channel": "telegram",
+        "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774440000000,
-        "lastRunAtMs": 1774398554191,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 39926,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774526400000
       }
     },
     {
-      "id": "24478247-a9fd-40f7-a784-913df70eaa48",
+      "id": "9bd2e571-bf0c-4a98-82a6-4492f30e823e",
       "agentId": "main",
-      "sessionKey": "agent:main:openclaw-weixin:direct:o9cq80wnRVtmrqvmmMrYw8D6mftg",
+      "sessionKey": "agent:main:main",
       "name": "daily-gaming-news-noon",
       "enabled": true,
-      "createdAtMs": 1773392900588,
-      "updatedAtMs": 1774398554191,
+      "createdAtMs": 1774508122332,
+      "updatedAtMs": 1774508122332,
       "schedule": {
+        "kind": "cron",
         "expr": "0 12 * * *",
-        "tz": "Asia/Shanghai",
-        "kind": "cron"
+        "tz": "Asia/Shanghai"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -268,18 +190,39 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "o9cq80wnRVtmrqvmmMrYw8D6mftg@im.wechat",
-        "channel": "openclaw-weixin"
+        "channel": "telegram",
+        "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774411200000,
-        "lastRunAtMs": 1774398541983,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 12208,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774584000000
+      }
+    },
+    {
+      "id": "437a787a-b14f-4e0f-8ee8-3054f8f37d98",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "openclaw-update-check",
+      "enabled": true,
+      "createdAtMs": 1774508122365,
+      "updatedAtMs": 1774508122365,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 259200000,
+        "anchorMs": 1774508122365
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请检查 OpenClaw 是否有新版本：\n1. 运行 /root/.openclaw/scripts/check_update.sh\n2. 如果有新版本，告诉我更新日志\n3. 问我是否要更新"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5220650531"
+      },
+      "state": {
+        "nextRunAtMs": 1774767322365
       }
     }
   ]
