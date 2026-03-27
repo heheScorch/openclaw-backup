@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-26T07:03:17.920Z"
+    "lastTouchedAt": "2026-03-26T12:58:50.811Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-26T07:01:15.331Z",
@@ -266,6 +266,10 @@
         "enabled": true,
         "provider": "duckduckgo"
       }
+    },
+    "exec": {
+      "host": "gateway",
+      "security": "full"
     }
   },
   "messages": {

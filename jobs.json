@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1774508122251,
-      "updatedAtMs": 1774508122251,
+      "updatedAtMs": 1774573257360,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -26,7 +26,14 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774573200000
+        "nextRunAtMs": 1774659600000,
+        "lastRunAtMs": 1774573200010,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 57350,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -36,7 +43,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1774508122268,
-      "updatedAtMs": 1774508122268,
+      "updatedAtMs": 1774530057207,
       "schedule": {
         "kind": "cron",
         "expr": "0 21 * * *",
@@ -54,7 +61,14 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774530000000
+        "nextRunAtMs": 1774616400000,
+        "lastRunAtMs": 1774530000007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 57200,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -64,7 +78,7 @@
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1774508122285,
-      "updatedAtMs": 1774508122285,
+      "updatedAtMs": 1774566044979,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -82,7 +96,14 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774566000000
+        "nextRunAtMs": 1774652400000,
+        "lastRunAtMs": 1774566000005,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 44974,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -110,7 +131,8 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774576800000
+        "nextRunAtMs": 1774576800000,
+        "runningAtMs": 1774576800002
       }
     },
     {
@@ -120,7 +142,7 @@
       "name": "daily-global-news-morning",
       "enabled": true,
       "createdAtMs": 1774508122308,
-      "updatedAtMs": 1774508122308,
+      "updatedAtMs": 1774569690826,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -138,7 +160,14 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774569600000
+        "nextRunAtMs": 1774656000000,
+        "lastRunAtMs": 1774569600004,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 90822,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -148,7 +177,7 @@
       "name": "daily-global-news-evening",
       "enabled": true,
       "createdAtMs": 1774508122321,
-      "updatedAtMs": 1774508122321,
+      "updatedAtMs": 1774526511678,
       "schedule": {
         "kind": "cron",
         "expr": "0 20 * * *",
@@ -166,7 +195,14 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774526400000
+        "nextRunAtMs": 1774612800000,
+        "lastRunAtMs": 1774526400007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 111671,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -223,6 +259,40 @@
       },
       "state": {
         "nextRunAtMs": 1774767322365
+      }
+    },
+    {
+      "id": "12462eaa-e411-4d9e-bc38-7bfed316b4ec",
+      "agentId": "main",
+      "name": "daily-ai-news-evening",
+      "enabled": true,
+      "createdAtMs": 1774546056305,
+      "updatedAtMs": 1774546221270,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 18 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请帮我收集过去24小时内的AI行业新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去24小时（从当前时间往前推算）\n\n## 新闻来源要求\n1. 全球主流科技媒体：TechCrunch、The Verge、Wired、Ars Technica等\n2. AI专业媒体：VentureBeat AI、MIT Tech Review、AI News等\n3. 中文科技媒体：36氪、机器之心、量子位、InfoQ等\n\n## 重点领域\n1. 大模型：GPT、Claude、Gemini、LLaMA等新版本/新功能\n2. AI应用：新发布的AI产品、工具、服务\n3. AI芯片：NVIDIA、AMD、Intel、国产芯片动态\n4. 投融资：AI公司融资、并购、IPO\n5. 政策法规：AI监管、政策变化\n6. 研究突破：重要论文、技术突破\n\n## 输出格式\n- 使用中文输出\n- 新闻列表（按重要性排序，5-10条）\n- 每条包含：标题、来源、简要摘要\n- 最后加一个「今日AI热点」总结\n\n## 注意事项\n- 只收集真实新闻，排除推测文章\n- 优先选择有实际影响的事件"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5220650531"
+      },
+      "state": {
+        "nextRunAtMs": 1774605600000,
+        "lastRunAtMs": 1774546128179,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 93091,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     }
   ]
