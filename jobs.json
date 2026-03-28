@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1774508122251,
-      "updatedAtMs": 1774573257360,
+      "updatedAtMs": 1774659795183,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -26,11 +26,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774659600000,
-        "lastRunAtMs": 1774573200010,
+        "nextRunAtMs": 1774746000000,
+        "lastRunAtMs": 1774659600004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 57350,
+        "lastDurationMs": 195179,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1774508122268,
-      "updatedAtMs": 1774530057207,
+      "updatedAtMs": 1774616602538,
       "schedule": {
         "kind": "cron",
         "expr": "0 21 * * *",
@@ -61,11 +61,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774616400000,
-        "lastRunAtMs": 1774530000007,
+        "nextRunAtMs": 1774702800000,
+        "lastRunAtMs": 1774616400007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 57200,
+        "lastDurationMs": 202531,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -78,7 +78,7 @@
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1774508122285,
-      "updatedAtMs": 1774566044979,
+      "updatedAtMs": 1774658319558,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -88,7 +88,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请运行 /root/.openclaw/scripts/weather_hangzhou.js 脚本获取杭州天气，直接把结果发给我即可"
+        "message": "运行 /root/.openclaw/scripts/weather_hangzhou.js 脚本获取杭州天气，直接发送结果，不要加任何额外说明"
       },
       "delivery": {
         "mode": "announce",
@@ -96,11 +96,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774652400000,
-        "lastRunAtMs": 1774566000005,
+        "nextRunAtMs": 1774738800000,
+        "lastRunAtMs": 1774652400006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 44974,
+        "lastDurationMs": 173249,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -113,7 +113,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1774508122299,
-      "updatedAtMs": 1774508122299,
+      "updatedAtMs": 1774576818100,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -131,8 +131,15 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774576800000,
-        "runningAtMs": 1774576800002
+        "nextRunAtMs": 1774663200000,
+        "lastRunAtMs": 1774576800007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 18093,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "runningAtMs": 1774663200000
       }
     },
     {
@@ -142,7 +149,7 @@
       "name": "daily-global-news-morning",
       "enabled": true,
       "createdAtMs": 1774508122308,
-      "updatedAtMs": 1774569690826,
+      "updatedAtMs": 1774662916126,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -152,7 +159,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时（从当前时间往前推算）\n\n## 新闻来源要求\n1. 全球主流媒体：BBC、CNN、Reuters、AP、NYT、WSJ等\n2. 重点区域：亚洲、欧洲、北美洲\n3. 重点领域：科技、财经、政治、国际关系\n\n## 分析维度\n1. 重大事件：列出最重要的5-8条新闻，包含标题、来源、发布时间、简要摘要\n2. 影响分析：每条新闻对相关领域可能产生的影响\n3. 热点趋势：识别当前最主要的新闻热点话题\n\n## 输出格式\n- 使用中文输出\n- 重大新闻列表（按重要性排序）\n- 热点分析总结\n\n## 注意事项\n- 只收集真实新闻，排除推测和分析文章\n- 确保新闻来源的权威性"
+        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时\n\n## 新闻来源（按优先级）\n### 国际主流媒体\n- BBC、CNN、Reuters、AP、NYT、WSJ、Bloomberg\n\n### 中文媒体\n- 新华社、央视新闻、澎湃新闻、财新网、界面新闻、观察者网、环球网\n\n### 重点区域\n- 亚洲、欧洲、北美洲\n\n### 重点领域\n- 科技、财经、政治、国际关系、重大事件\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-8条\n- 每条：标题、来源、简要摘要（50字内）\n- 最后简短总结今日热点（2-3句话）\n\n## 注意事项\n- 平衡中外来源，确保有中国视角的新闻\n- 只收集真实新闻，排除推测文章"
       },
       "delivery": {
         "mode": "announce",
@@ -160,11 +167,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774656000000,
-        "lastRunAtMs": 1774569600004,
+        "nextRunAtMs": 1774742400000,
+        "lastRunAtMs": 1774656000004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 90822,
+        "lastDurationMs": 334353,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -177,7 +184,7 @@
       "name": "daily-global-news-evening",
       "enabled": true,
       "createdAtMs": 1774508122321,
-      "updatedAtMs": 1774526511678,
+      "updatedAtMs": 1774662948588,
       "schedule": {
         "kind": "cron",
         "expr": "0 20 * * *",
@@ -187,7 +194,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时（从当前时间往前推算）\n\n## 新闻来源要求\n1. 全球主流媒体：BBC、CNN、Reuters、AP、NYT、WSJ等\n2. 重点区域：亚洲、欧洲、北美洲\n3. 重点领域：科技、财经、政治、国际关系\n\n## 分析维度\n1. 重大事件：列出最重要的5-8条新闻，包含标题、来源、发布时间、简要摘要\n2. 影响分析：每条新闻对相关领域可能产生的影响\n3. 热点趋势：识别当前最主要的新闻热点话题\n\n## 输出格式\n- 使用中文输出\n- 重大新闻列表（按重要性排序）\n 热点分析总结\n\n## 注意事项\n- 只收集真实新闻，排除推测和分析文章\n- 确保新闻来源的权威性"
+        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时\n\n## 新闻来源（按优先级）\n### 国际主流媒体\n- BBC、CNN、Reuters、AP、NYT、WSJ、Bloomberg\n\n### 中文媒体\n- 新华社、央视新闻、澎湃新闻、财新网、界面新闻、观察者网、环球网\n\n### 重点区域\n- 亚洲、欧洲、北美洲\n\n### 重点领域\n- 科技、财经、政治、国际关系、重大事件\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-8条\n- 每条：标题、来源、简要摘要（50字内）\n- 最后简短总结今日热点（2-3句话）\n\n## 注意事项\n- 平衡中外来源，确保有中国视角的新闻\n- 只收集真实新闻，排除推测文章"
       },
       "delivery": {
         "mode": "announce",
@@ -195,11 +202,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774612800000,
-        "lastRunAtMs": 1774526400007,
+        "nextRunAtMs": 1774699200000,
+        "lastRunAtMs": 1774612800007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 111671,
+        "lastDurationMs": 195098,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -212,7 +219,7 @@
       "name": "daily-gaming-news-noon",
       "enabled": true,
       "createdAtMs": 1774508122332,
-      "updatedAtMs": 1774508122332,
+      "updatedAtMs": 1774662948666,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -222,7 +229,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去24小时内的游戏行业新闻，具体要求：\n\n## 时间范围\n- 过去24小时\n\n## 指定数据源（优先）\n1. GamesIndustry.biz\n2. GameSpot\n3. IGN\n4. Polygon\n5. Game Developer\n\n## 收集内容\n1. 重大新闻（3A大作、收购并购、财报等）\n2. 公司动态\n3. 市场数据\n4. 产品信息\n\n## 输出格式\n- 中文输出\n- 按重要性排序\n- 每条标注来源\n- 总结3个热点\n\n## 优化要求\n- 搜索结果取前5-8条即可\n- 不需要逐条详细分析\n- 简洁明了"
+        "message": "请帮我收集过去24小时内的游戏行业新闻，具体要求：\n\n## 时间范围\n- 过去24小时\n\n## 新闻来源（按优先级）\n### 国际媒体\n- GamesIndustry.biz、GameSpot、IGN、Polygon、Game Developer、Kotaku\n\n### 中文媒体\n- 游研社、游民星空、游戏葡萄、3DM、17173、电玩巴士\n\n## 收集内容\n1. 重大新闻：3A大作、收购并购、财报、新游戏发布\n2. 公司动态：游戏公司重要动向\n3. 市场数据：销量、玩家数据\n4. 产品信息：新游戏、更新、DLC\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-8条\n- 每条：标题、来源、简要摘要\n- 最后总结3个今日热点\n\n## 注意事项\n- 平衡中外来源，确保有国产游戏动态\n- 只收集真实新闻，简洁明了"
       },
       "delivery": {
         "mode": "announce",
@@ -230,7 +237,14 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774584000000
+        "nextRunAtMs": 1774670400000,
+        "lastRunAtMs": 1774584000006,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 306403,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -267,7 +281,7 @@
       "name": "daily-ai-news-evening",
       "enabled": true,
       "createdAtMs": 1774546056305,
-      "updatedAtMs": 1774546221270,
+      "updatedAtMs": 1774662948386,
       "schedule": {
         "kind": "cron",
         "expr": "0 18 * * *",
@@ -277,7 +291,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去24小时内的AI行业新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去24小时（从当前时间往前推算）\n\n## 新闻来源要求\n1. 全球主流科技媒体：TechCrunch、The Verge、Wired、Ars Technica等\n2. AI专业媒体：VentureBeat AI、MIT Tech Review、AI News等\n3. 中文科技媒体：36氪、机器之心、量子位、InfoQ等\n\n## 重点领域\n1. 大模型：GPT、Claude、Gemini、LLaMA等新版本/新功能\n2. AI应用：新发布的AI产品、工具、服务\n3. AI芯片：NVIDIA、AMD、Intel、国产芯片动态\n4. 投融资：AI公司融资、并购、IPO\n5. 政策法规：AI监管、政策变化\n6. 研究突破：重要论文、技术突破\n\n## 输出格式\n- 使用中文输出\n- 新闻列表（按重要性排序，5-10条）\n- 每条包含：标题、来源、简要摘要\n- 最后加一个「今日AI热点」总结\n\n## 注意事项\n- 只收集真实新闻，排除推测文章\n- 优先选择有实际影响的事件"
+        "message": "请帮我收集过去24小时内的AI行业新闻，具体要求：\n\n## 时间范围\n- 过去24小时\n\n## 新闻来源（按优先级）\n### 国际媒体\n- TechCrunch、The Verge、Wired、Ars Technica\n- VentureBeat AI、MIT Tech Review\n\n### 中文媒体\n- 36氪、机器之心、量子位、InfoQ中文\n- AI科技评论、新智元、智东西\n\n## 重点领域\n1. 大模型：GPT、Claude、Gemini、LLaMA、国产大模型\n2. AI应用：新产品、新工具、新服务\n3. AI芯片：NVIDIA、AMD、Intel、国产芯片\n4. 投融资：融资、并购、IPO\n5. 政策法规：AI监管、政策变化\n6. 研究突破：重要论文、技术进展\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-10条\n- 每条：标题、来源、简要摘要\n- 最后加「今日AI热点」总结（2-3句话）\n\n## 注意事项\n- 平衡中外来源，确保有国产AI动态\n- 只收集真实新闻"
       },
       "delivery": {
         "mode": "announce",
@@ -285,11 +299,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1774605600000,
-        "lastRunAtMs": 1774546128179,
+        "nextRunAtMs": 1774692000000,
+        "lastRunAtMs": 1774605600005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 93091,
+        "lastDurationMs": 270228,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0

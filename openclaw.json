@@ -1,12 +1,12 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-26T12:58:50.811Z"
+    "lastTouchedAt": "2026-03-27T18:15:00.451Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-26T07:01:15.331Z",
+    "lastRunAt": "2026-03-27T04:56:11.035Z",
     "lastRunVersion": "2026.3.24",
-    "lastRunCommand": "onboard",
+    "lastRunCommand": "configure",
     "lastRunMode": "local"
   },
   "auth": {
@@ -17,6 +17,10 @@
       },
       "minimax-cn:default": {
         "provider": "minimax-cn",
+        "mode": "api_key"
+      },
+      "minimax:cn": {
+        "provider": "minimax",
         "mode": "api_key"
       }
     }
@@ -59,22 +63,6 @@
             },
             "contextWindow": 202800,
             "maxTokens": 131100
-          },
-          {
-            "id": "glm-4.7",
-            "name": "GLM-4.7",
-            "reasoning": true,
-            "input": [
-              "text"
-            ],
-            "cost": {
-              "input": 0.6,
-              "output": 2.2,
-              "cacheRead": 0.11,
-              "cacheWrite": 0
-            },
-            "contextWindow": 204800,
-            "maxTokens": 131072
           },
           {
             "id": "glm-4.7-flash",
@@ -230,23 +218,46 @@
             "maxTokens": 8192
           }
         ]
+      },
+      "minimax": {
+        "baseUrl": "https://api.minimaxi.com/anthropic",
+        "api": "anthropic-messages",
+        "authHeader": true,
+        "models": [
+          {
+            "id": "MiniMax-M2.7",
+            "name": "MiniMax M2.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0.3,
+              "output": 1.2,
+              "cacheRead": 0.06,
+              "cacheWrite": 0.375
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          }
+        ]
       }
     }
   },
   "agents": {
     "defaults": {
       "model": {
-        "primary": "zai/glm-5"
+        "primary": "minimax/MiniMax-M2.7",
+        "fallbacks": [
+          "zai/glm-5"
+        ]
       },
       "models": {
         "zai/glm-5": {
           "alias": "GLM"
         },
-        "minimax-cn/MiniMax-M2.5": {
+        "minimax/MiniMax-M2.7": {
           "alias": "Minimax"
-        },
-        "zai/glm-4.7": {
-          "alias": "GLM"
         }
       },
       "workspace": "/root/.openclaw/workspace",
@@ -266,6 +277,9 @@
         "enabled": true,
         "provider": "duckduckgo"
       }
+    },
+    "sessions": {
+      "visibility": "agent"
     },
     "exec": {
       "host": "gateway",
@@ -295,6 +309,8 @@
         }
       },
       "groupPolicy": "allowlist",
+      "textChunkLimit": 4000,
+      "chunkMode": "length",
       "streaming": "partial"
     }
   },
@@ -302,6 +318,12 @@
     "port": 18789,
     "mode": "local",
     "bind": "loopback",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789"
+      ]
+    },
     "auth": {
       "mode": "token",
       "token": "26d3e011293177f3f7cda28bcc63eca7672ea62d06de67fc"
@@ -309,6 +331,9 @@
     "tailscale": {
       "mode": "off",
       "resetOnExit": false
+    },
+    "remote": {
+      "url": "ws://100.69.214.59:18789"
     },
     "nodes": {
       "denyCommands": [
