@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-27T18:15:00.451Z"
+    "lastTouchedAt": "2026-03-29T10:01:14.004Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-27T04:56:11.035Z",
+    "lastRunAt": "2026-03-29T10:01:13.978Z",
     "lastRunVersion": "2026.3.24",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -35,6 +35,7 @@
           {
             "id": "glm-5",
             "name": "GLM-5",
+            "api": "openai-completions",
             "reasoning": true,
             "input": [
               "text"
@@ -51,6 +52,7 @@
           {
             "id": "glm-5-turbo",
             "name": "GLM-5 Turbo",
+            "api": "openai-completions",
             "reasoning": true,
             "input": [
               "text"
@@ -67,6 +69,7 @@
           {
             "id": "glm-4.7-flash",
             "name": "GLM-4.7 Flash",
+            "api": "openai-completions",
             "reasoning": true,
             "input": [
               "text"
@@ -83,6 +86,7 @@
           {
             "id": "glm-4.7-flashx",
             "name": "GLM-4.7 FlashX",
+            "api": "openai-completions",
             "reasoning": true,
             "input": [
               "text"
@@ -99,6 +103,7 @@
           {
             "id": "glm-4.6",
             "name": "GLM-4.6",
+            "api": "openai-completions",
             "reasoning": true,
             "input": [
               "text"
@@ -115,6 +120,7 @@
           {
             "id": "glm-4.6v",
             "name": "GLM-4.6V",
+            "api": "openai-completions",
             "reasoning": true,
             "input": [
               "text",
@@ -132,6 +138,7 @@
           {
             "id": "glm-4.5",
             "name": "GLM-4.5",
+            "api": "openai-completions",
             "reasoning": true,
             "input": [
               "text"
@@ -148,6 +155,7 @@
           {
             "id": "glm-4.5-air",
             "name": "GLM-4.5 Air",
+            "api": "openai-completions",
             "reasoning": true,
             "input": [
               "text"
@@ -164,6 +172,7 @@
           {
             "id": "glm-4.5-flash",
             "name": "GLM-4.5 Flash",
+            "api": "openai-completions",
             "reasoning": true,
             "input": [
               "text"
@@ -180,6 +189,7 @@
           {
             "id": "glm-4.5v",
             "name": "GLM-4.5V",
+            "api": "openai-completions",
             "reasoning": true,
             "input": [
               "text",
@@ -193,6 +203,22 @@
             },
             "contextWindow": 64000,
             "maxTokens": 16384
+          },
+          {
+            "id": "glm-4.7",
+            "name": "GLM-4.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0.6,
+              "output": 2.2,
+              "cacheRead": 0.11,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
           }
         ]
       },
@@ -249,7 +275,11 @@
       "model": {
         "primary": "minimax/MiniMax-M2.7",
         "fallbacks": [
-          "zai/glm-5"
+          "zai/glm-5",
+          "zai/glm-5-turbo",
+          "zai/glm-4.7-flash",
+          "zai/glm-4.7",
+          "minimax/MiniMax-M2.7-highspeed"
         ]
       },
       "models": {
@@ -258,7 +288,11 @@
         },
         "minimax/MiniMax-M2.7": {
           "alias": "Minimax"
-        }
+        },
+        "zai/glm-5-turbo": {},
+        "zai/glm-4.7-flash": {},
+        "zai/glm-4.7": {},
+        "minimax/MiniMax-M2.7-highspeed": {}
       },
       "workspace": "/root/.openclaw/workspace",
       "compaction": {
