@@ -1,242 +1,242 @@
 [
   {
-    "rank": 1,
     "appid": 730,
     "name": "Counter-Strike 2",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1749053861",
-    "current": 605711,
-    "peak": 1438085
+    "current": 679355,
+    "peak": 1573122,
+    "rank": 1
   },
   {
-    "rank": 2,
     "appid": 570,
     "name": "Dota 2",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1769535998",
-    "current": 257277,
-    "peak": 602060
+    "current": 259431,
+    "peak": 587859,
+    "rank": 2
   },
   {
-    "rank": 3,
     "appid": 2868840,
     "name": "Slay the Spire 2",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/b0958d387dc366211e0f353443710cfcf9fdb020/header.jpg?t=1773851542",
-    "current": 154761,
-    "peak": 353683
+    "current": 153300,
+    "peak": 335168,
+    "rank": 3
   },
   {
-    "rank": 4,
     "appid": 3321460,
     "name": "Crimson Desert",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/abd7dbdeaede8b6c9a6d40bf116ff2b883f2dd45/header.jpg?t=1774868383",
-    "current": 143126,
-    "peak": 186022
+    "current": 139033,
+    "peak": 177011,
+    "rank": 4
   },
   {
-    "rank": 5,
     "appid": 1808500,
     "name": "ARC Raiders",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/04baafaf64a5aa5f46ecda5d71889a4848dc0628/header.jpg?t=1772007651",
-    "current": 134036,
-    "peak": 153517
+    "current": 120851,
+    "peak": 136143,
+    "rank": 5
   },
   {
-    "rank": 6,
     "appid": 2767030,
     "name": "Marvel Rivals",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/d0fbd193f4a68c7563ae47ab3322d08f184633f9/header.jpg?t=1774000818",
-    "current": 93277,
-    "peak": 98815
+    "current": 90648,
+    "peak": 96968,
+    "rank": 6
   },
   {
-    "rank": 7,
     "appid": 578080,
     "name": "PUBG: BATTLEGROUNDS",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1764817633",
-    "current": 87817,
-    "peak": 836235
+    "current": 87792,
+    "peak": 810776,
+    "rank": 7
   },
   {
-    "rank": 8,
     "appid": 359550,
     "name": "Tom Clancy's Rainbow Six Siege",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/02bbaf21cba8bde8472a403cc5cefa55c78f469e/header_alt_assets_19.jpg?t=1774459715",
-    "current": 85417,
-    "peak": 88201
+    "current": 86127,
+    "peak": 85924,
+    "rank": 8
   },
   {
-    "rank": 9,
     "appid": 1172470,
     "name": "Apex Legends™",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/5f9cd40d1507568651688af121d378dab35d3d35/header.jpg?t=1770753360",
-    "current": 71542,
-    "peak": 275736
+    "current": 75625,
+    "peak": 276983,
+    "rank": 9
   },
   {
-    "rank": 10,
-    "appid": 252490,
-    "name": "Rust",
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1771871433",
-    "current": 61308,
-    "peak": 129914
-  },
-  {
-    "rank": 11,
-    "appid": 322170,
-    "name": "Geometry Dash",
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/header.jpg?t=1703006148",
-    "current": 61280,
-    "peak": 79275
-  },
-  {
-    "rank": 12,
     "appid": 2357570,
     "name": "Overwatch®",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/2044d29c64bf646c162052110e66c922fef47e7a/header_alt_assets_19.jpg?t=1771358111",
-    "current": 59093,
-    "peak": 67103
+    "current": 67319,
+    "peak": 73077,
+    "rank": 10
   },
   {
-    "rank": 13,
-    "appid": 413150,
-    "name": "Stardew Valley",
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1754692865",
-    "current": 55765,
-    "peak": 133391
+    "appid": 322170,
+    "name": "Geometry Dash",
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/header.jpg?t=1703006148",
+    "current": 63334,
+    "peak": 83343,
+    "rank": 11
   },
   {
-    "rank": 14,
+    "appid": 252490,
+    "name": "Rust",
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1771871433",
+    "current": 57787,
+    "peak": 113727,
+    "rank": 12
+  },
+  {
     "appid": 230410,
     "name": "Warframe",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/60ce7425b864dd3c0dd855bfc66004c6f9ca4844/header.jpg?t=1774467330",
-    "current": 55269,
-    "peak": 76313
+    "current": 55868,
+    "peak": 73442,
+    "rank": 13
   },
   {
-    "rank": 15,
+    "appid": 236390,
+    "name": "War Thunder",
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/a2f20d4d804f173212bd2ffa586d1b0e9bb61f90/header_alt_assets_0.jpg?t=1775023987",
+    "current": 54930,
+    "peak": 105671,
+    "rank": 14
+  },
+  {
+    "appid": 413150,
+    "name": "Stardew Valley",
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1754692865",
+    "current": 54183,
+    "peak": 124163,
+    "rank": 15
+  },
+  {
     "appid": 381210,
     "name": "Dead by Daylight",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/97f69c3ff1d7fc1237b7192265066dd4e9acd004/header_alt_assets_7.jpg?t=1773849399",
-    "current": 51343,
-    "peak": 71789
+    "current": 50214,
+    "peak": 70457,
+    "rank": 16
   },
   {
-    "rank": 16,
-    "appid": 440,
-    "name": "Team Fortress 2",
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372",
-    "current": 48687,
-    "peak": 57645
-  },
-  {
-    "rank": 17,
-    "appid": 553850,
-    "name": "HELLDIVERS™ 2",
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/f11c258b04a5e3e7771c1bab60f324ebf6c6c6fb/header.jpg?t=1770747641",
-    "current": 41333,
-    "peak": 50469
-  },
-  {
-    "rank": 18,
     "appid": 271590,
     "name": "Grand Theft Auto V Legacy",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1765387725",
-    "current": 38784,
-    "peak": 96011
+    "current": 43898,
+    "peak": 98736,
+    "rank": 17
   },
   {
-    "rank": 19,
+    "appid": 553850,
+    "name": "HELLDIVERS™ 2",
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/f11c258b04a5e3e7771c1bab60f324ebf6c6c6fb/header.jpg?t=1770747641",
+    "current": 42746,
+    "peak": 48107,
+    "rank": 18
+  },
+  {
     "appid": 438100,
     "name": "VRChat",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg?t=1762366454",
-    "current": 37002,
-    "peak": 54996
+    "current": 42509,
+    "peak": 55305,
+    "rank": 19
   },
   {
-    "rank": 20,
+    "appid": 440,
+    "name": "Team Fortress 2",
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372",
+    "current": 36143,
+    "peak": 48687,
+    "rank": 20
+  },
+  {
     "appid": 2507950,
     "name": "Delta Force",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2507950/987c10c754bfdfc94805e5255e328e428cc73428/header_alt_assets_10.jpg?t=1772768205",
-    "current": 34520,
-    "peak": 138448
+    "current": 35770,
+    "peak": 135373,
+    "rank": 21
   },
   {
-    "rank": 21,
-    "appid": 2807960,
-    "name": "Battlefield™ 6",
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1774364404",
-    "current": 32943,
-    "peak": 47176
-  },
-  {
-    "rank": 22,
     "appid": 3240220,
     "name": "Grand Theft Auto V Enhanced",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg?t=1765479644",
-    "current": 32776,
-    "peak": 83796
+    "current": 34212,
+    "peak": 81972,
+    "rank": 22
   },
   {
-    "rank": 23,
-    "appid": 105600,
-    "name": "Terraria",
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1769844435",
-    "current": 30321,
-    "peak": 52090
-  },
-  {
-    "rank": 24,
     "appid": 3405690,
     "name": "EA SPORTS FC™ 26",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/2d96aa1b06e453cd62dae9029d412f19e61932c3/header.jpg?t=1774297876",
-    "current": 29060,
-    "peak": 55187
+    "current": 32433,
+    "peak": 56884,
+    "rank": 23
   },
   {
-    "rank": 25,
-    "appid": 1973530,
-    "name": "Limbus Company",
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1774627509",
-    "current": 27596,
-    "peak": 66939
+    "appid": 2807960,
+    "name": "Battlefield™ 6",
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1774364404",
+    "current": 31985,
+    "peak": 45283,
+    "rank": 24
   },
   {
-    "rank": 26,
+    "appid": 105600,
+    "name": "Terraria",
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1769844435",
+    "current": 25899,
+    "peak": 47893,
+    "rank": 25
+  },
+  {
     "appid": 1174180,
     "name": "Red Dead Redemption 2",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961",
-    "current": 26115,
-    "peak": 47588
+    "current": 25564,
+    "peak": 47115,
+    "rank": 26
   },
   {
-    "rank": 27,
-    "appid": 550,
-    "name": "Left 4 Dead 2",
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1772742214",
-    "current": 23364,
-    "peak": 28089
+    "appid": 1973530,
+    "name": "Limbus Company",
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1973530/header.jpg?t=1774627509",
+    "current": 19134,
+    "peak": 52263,
+    "rank": 27
   },
   {
-    "rank": 28,
     "appid": 3241660,
     "name": "R.E.P.O.",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/1ea445e044a2d5b09cfa8291350b63ebed6e5741/header.jpg?t=1765552338",
-    "current": 18325,
-    "peak": 51380
+    "current": 19068,
+    "peak": 47933,
+    "rank": 28
   },
   {
-    "rank": 29,
     "appid": 227300,
     "name": "Euro Truck Simulator 2",
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/9a81dc3126c56637297b654f9dcac057cfd79b77/header.jpg?t=1773641450",
-    "current": 13855,
-    "peak": 46108
+    "current": 14300,
+    "peak": 44771,
+    "rank": 29
   },
   {
-    "rank": 30,
-    "appid": 1422450,
-    "name": "Deadlock",
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422450/aa249c5e8cc8f90941bd1dbdc311773cd1afe065/header.jpg?t=1769127177",
-    "current": 0,
-    "peak": 82543
+    "appid": 1203220,
+    "name": "NARAKA: BLADEPOINT",
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203220/d88c88f00b267dd54fa5fbcbb7e5b53245e0011a/header.jpg?t=1775009316",
+    "current": 7971,
+    "peak": 87506,
+    "rank": 30
   }
 ]

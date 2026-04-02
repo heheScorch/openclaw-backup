@@ -70,8 +70,13 @@ async function main() {
     const nameLower = details.name.toLowerCase();
     if (EXCLUDE_LIST.some(k => nameLower.includes(k))) continue;
     
+    // 过滤掉人数为 0 的游戏
+    if (count === 0) {
+      console.log(`跳过 ${details.name} (当前人数为0)`);
+      continue;
+    }
+    
     results.push({
-      rank: results.length + 1,
       appid: g.appid,
       name: details.name,
       header_image: details.header_image,
@@ -91,15 +96,13 @@ async function main() {
   
   // Generate output
   const now = new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' });
-  let msg = `🎮 Steam 最热玩游戏 TOP 30\n📅 ${now}\n\n`;
+  let msg = `🎮 Steam 最热玩游戏 TOP 20\n📅 ${now}\n\n`;
   
-  results.forEach((g, i) => {
-    msg += `${g.rank}. ${g.name}\n`;
-    msg += `   🖼️ ${g.header_image}\n`;
-    msg += `   👥 当前: ${g.current.toLocaleString()} | 峰值: ${g.peak.toLocaleString()}\n\n`;
+  results.slice(0, 20).forEach((g, i) => {
+    msg += `#${g.rank} ${g.name} | 当前: ${g.current.toLocaleString()} | 峰值: ${g.peak.toLocaleString()}\n`;
   });
   
-  msg += '— 数据来源：Steam 官方 API';
+  msg += '\n— 数据来源：Steam 官方 API';
   console.log('\n' + msg);
 }
 
