@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1774508122251,
-      "updatedAtMs": 1775091766808,
+      "updatedAtMs": 1775178203288,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -26,11 +26,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775178000000,
-        "lastRunAtMs": 1775091600005,
+        "nextRunAtMs": 1775264400000,
+        "lastRunAtMs": 1775178000007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 166803,
+        "lastDurationMs": 203281,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1774508122268,
-      "updatedAtMs": 1775048552034,
+      "updatedAtMs": 1775135077948,
       "schedule": {
         "kind": "cron",
         "expr": "0 21 * * *",
@@ -61,11 +61,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775134800000,
-        "lastRunAtMs": 1775048400006,
+        "nextRunAtMs": 1775221200000,
+        "lastRunAtMs": 1775134800005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 152028,
+        "lastDurationMs": 277943,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -78,7 +78,7 @@
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1774508122285,
-      "updatedAtMs": 1775084563456,
+      "updatedAtMs": 1775171045762,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -96,11 +96,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775170800000,
-        "lastRunAtMs": 1775084400006,
+        "nextRunAtMs": 1775257200000,
+        "lastRunAtMs": 1775170800003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 163450,
+        "lastDurationMs": 245759,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -113,7 +113,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1774508122299,
-      "updatedAtMs": 1775008978337,
+      "updatedAtMs": 1775095366218,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -131,15 +131,15 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775095200000,
-        "lastRunAtMs": 1775008800004,
+        "nextRunAtMs": 1775181600000,
+        "lastRunAtMs": 1775095200006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 178333,
+        "lastDurationMs": 166212,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1775095200002
+        "runningAtMs": 1775181600000
       }
     },
     {
@@ -149,7 +149,7 @@
       "name": "daily-global-news-morning",
       "enabled": true,
       "createdAtMs": 1774508122308,
-      "updatedAtMs": 1775088243072,
+      "updatedAtMs": 1775175814420,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -159,7 +159,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时\n\n## 新闻来源（按优先级）\n### 国际主流媒体\n- BBC、CNN、Reuters、AP、NYT、WSJ、Bloomberg\n\n### 中文媒体\n- 新华社、央视新闻、澎湃新闻、财新网、界面新闻、观察者网、环球网\n\n### 重点区域\n- 亚洲、欧洲、北美洲\n\n### 重点领域\n- 科技、财经、政治、国际关系、重大事件\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-8条\n- 每条：标题、来源、简要摘要（50字内）\n- 最后简短总结今日热点（2-3句话）\n\n## 注意事项\n- 平衡中外来源，确保有中国视角的新闻\n- 只收集真实新闻，排除推测文章"
+        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时\n\n## 新闻来源（按优先级）\n### 国际主流媒体\n- BBC、CNN、Reuters、AP、NYT、WSJ、Bloomberg\n\n### 中文媒体\n- 新华社、央视新闻、澎湃新闻、财新网、界面新闻、环球网\n\n### 重点区域\n- 亚洲、欧洲、北美洲\n\n### 重点领域\n- 科技、财经、政治、国际关系、重大事件\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-8条\n- 每条：标题、来源、简要摘要（50字内）\n- 最后简短总结今日热点（2-3句话）\n\n## 注意事项\n- 平衡中外来源，确保有中国视角的新闻\n- 只收集真实新闻，排除推测文章"
       },
       "delivery": {
         "mode": "announce",
@@ -167,11 +167,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775174400000,
-        "lastRunAtMs": 1775088000004,
+        "nextRunAtMs": 1775260800000,
+        "lastRunAtMs": 1775174400003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 243068,
+        "lastDurationMs": 286805,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -184,7 +184,7 @@
       "name": "daily-global-news-evening",
       "enabled": true,
       "createdAtMs": 1774508122321,
-      "updatedAtMs": 1775045044977,
+      "updatedAtMs": 1775175826895,
       "schedule": {
         "kind": "cron",
         "expr": "0 20 * * *",
@@ -194,7 +194,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时\n\n## 新闻来源（按优先级）\n### 国际主流媒体\n- BBC、CNN、Reuters、AP、NYT、WSJ、Bloomberg\n\n### 中文媒体\n- 新华社、央视新闻、澎湃新闻、财新网、界面新闻、观察者网、环球网\n\n### 重点区域\n- 亚洲、欧洲、北美洲\n\n### 重点领域\n- 科技、财经、政治、国际关系、重大事件\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-8条\n- 每条：标题、来源、简要摘要（50字内）\n- 最后简短总结今日热点（2-3句话）\n\n## 注意事项\n- 平衡中外来源，确保有中国视角的新闻\n- 只收集真实新闻，排除推测文章"
+        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时\n\n## 新闻来源（按优先级）\n### 国际主流媒体\n- BBC、CNN、Reuters、AP、NYT、WSJ、Bloomberg\n\n### 中文媒体\n- 新华社、央视新闻、澎湃新闻、财新网、界面新闻、环球网\n\n### 重点区域\n- 亚洲、欧洲、北美洲\n\n### 重点领域\n- 科技、财经、政治、国际关系、重大事件\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-8条\n- 每条：标题、来源、简要摘要（50字内）\n- 最后简短总结今日热点（2-3句话）\n\n## 注意事项\n- 平衡中外来源\n确保有中国视角的新闻\n- 只收集真实新闻\n排除推测文章"
       },
       "delivery": {
         "mode": "announce",
@@ -202,11 +202,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775131200000,
-        "lastRunAtMs": 1775044800005,
+        "nextRunAtMs": 1775217600000,
+        "lastRunAtMs": 1775131200006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 244972,
+        "lastDurationMs": 244765,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -219,7 +219,7 @@
       "name": "daily-gaming-news-noon",
       "enabled": true,
       "createdAtMs": 1774508122332,
-      "updatedAtMs": 1775016256850,
+      "updatedAtMs": 1775102742008,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -237,11 +237,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775102400000,
-        "lastRunAtMs": 1775016000004,
+        "nextRunAtMs": 1775188800000,
+        "lastRunAtMs": 1775102400005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 256846,
+        "lastDurationMs": 342003,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -288,7 +288,7 @@
       "name": "daily-ai-news-evening",
       "enabled": true,
       "createdAtMs": 1774546056305,
-      "updatedAtMs": 1775037851855,
+      "updatedAtMs": 1775124218439,
       "schedule": {
         "kind": "cron",
         "expr": "0 18 * * *",
@@ -306,13 +306,13 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775124000000,
-        "lastRunAtMs": 1775037600017,
+        "nextRunAtMs": 1775210400000,
+        "lastRunAtMs": 1775124000005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 251838,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
+        "lastDurationMs": 218434,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
     },
@@ -322,7 +322,7 @@
       "name": "daily-ai-github-trends",
       "enabled": true,
       "createdAtMs": 1774947785126,
-      "updatedAtMs": 1775009089973,
+      "updatedAtMs": 1775095438481,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -340,15 +340,49 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775095200000,
-        "lastRunAtMs": 1775008978337,
+        "nextRunAtMs": 1775181600000,
+        "lastRunAtMs": 1775095366218,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 111636,
+        "lastDurationMs": 72263,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1775095200002
+        "runningAtMs": 1775181600000
+      }
+    },
+    {
+      "id": "290c526d-c91a-41ec-a1f5-cd5200a37831",
+      "agentId": "main",
+      "name": "dota2-ti-ticket-watch",
+      "enabled": true,
+      "createdAtMs": 1775106933793,
+      "updatedAtMs": 1775171762891,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 21600000,
+        "anchorMs": 1775106933793
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "搜索 2026 Dota2 上海国际邀请赛(TI15)门票相关新闻，重点关注：\n- 门票是否已开售\n- 票价信息\n- 购票渠道\n- 购票链接\n\n任务要求\n1. 如果门票还未开售\n回复 NO_TICKET_NEWS\n2. 如果门票已开售或有新消息，推送以下格式\n🎫 TI15 门票信息\n- 开售时间\n- 票价\n- 购票渠道\n- 购票链接\n\n只搜索官方渠道\n搜索关键词\n2026 Dota2 上海国际邀请赛赛 TI 门票"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "5220650531"
+      },
+      "state": {
+        "nextRunAtMs": 1775193335807,
+        "lastRunAtMs": 1775171735807,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 27084,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     }
   ]
