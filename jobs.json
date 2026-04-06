@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1774508122251,
-      "updatedAtMs": 1775350931550,
+      "updatedAtMs": 1775437337445,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -26,11 +26,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775437200000,
-        "lastRunAtMs": 1775350800004,
+        "nextRunAtMs": 1775523600000,
+        "lastRunAtMs": 1775437200007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 131546,
+        "lastDurationMs": 137438,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1774508122268,
-      "updatedAtMs": 1775307623746,
+      "updatedAtMs": 1775394025190,
       "schedule": {
         "kind": "cron",
         "expr": "0 21 * * *",
@@ -61,11 +61,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775394000000,
-        "lastRunAtMs": 1775307600004,
+        "nextRunAtMs": 1775480400000,
+        "lastRunAtMs": 1775394000005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 23742,
+        "lastDurationMs": 25185,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -78,7 +78,7 @@
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1774508122285,
-      "updatedAtMs": 1775343766425,
+      "updatedAtMs": 1775430162628,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -96,11 +96,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775430000000,
-        "lastRunAtMs": 1775343600007,
+        "nextRunAtMs": 1775516400000,
+        "lastRunAtMs": 1775430000005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 166418,
+        "lastDurationMs": 162623,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -113,7 +113,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1774508122299,
-      "updatedAtMs": 1775268007429,
+      "updatedAtMs": 1775354581772,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -131,15 +131,15 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775354400000,
-        "lastRunAtMs": 1775268000005,
+        "nextRunAtMs": 1775440800000,
+        "lastRunAtMs": 1775354400005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 7424,
+        "lastDurationMs": 181767,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1775354400001
+        "runningAtMs": 1775440800001
       }
     },
     {
@@ -149,7 +149,7 @@
       "name": "daily-global-news-morning",
       "enabled": true,
       "createdAtMs": 1774508122308,
-      "updatedAtMs": 1775347480502,
+      "updatedAtMs": 1775433886967,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -167,11 +167,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775433600000,
-        "lastRunAtMs": 1775347200004,
+        "nextRunAtMs": 1775520000000,
+        "lastRunAtMs": 1775433600006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 280498,
+        "lastDurationMs": 286961,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -184,7 +184,7 @@
       "name": "daily-global-news-evening",
       "enabled": true,
       "createdAtMs": 1774508122321,
-      "updatedAtMs": 1775304232177,
+      "updatedAtMs": 1775390675050,
       "schedule": {
         "kind": "cron",
         "expr": "0 20 * * *",
@@ -202,11 +202,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775390400000,
-        "lastRunAtMs": 1775304000006,
+        "nextRunAtMs": 1775476800000,
+        "lastRunAtMs": 1775390400004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 232171,
+        "lastDurationMs": 275046,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -219,7 +219,7 @@
       "name": "daily-gaming-news-noon",
       "enabled": true,
       "createdAtMs": 1774508122332,
-      "updatedAtMs": 1775275419714,
+      "updatedAtMs": 1775361921522,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -237,11 +237,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775361600000,
-        "lastRunAtMs": 1775275200006,
+        "nextRunAtMs": 1775448000000,
+        "lastRunAtMs": 1775361600004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 219708,
+        "lastDurationMs": 321518,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -288,7 +288,7 @@
       "name": "daily-ai-news-evening",
       "enabled": true,
       "createdAtMs": 1774546056305,
-      "updatedAtMs": 1775297137453,
+      "updatedAtMs": 1775383266837,
       "schedule": {
         "kind": "cron",
         "expr": "0 18 * * *",
@@ -306,11 +306,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775383200000,
-        "lastRunAtMs": 1775296800005,
+        "nextRunAtMs": 1775469600000,
+        "lastRunAtMs": 1775383200008,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 337448,
+        "lastDurationMs": 66829,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -322,7 +322,7 @@
       "name": "daily-ai-github-trends",
       "enabled": true,
       "createdAtMs": 1774947785126,
-      "updatedAtMs": 1775268164378,
+      "updatedAtMs": 1775354630703,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -340,15 +340,15 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775354400000,
-        "lastRunAtMs": 1775268007429,
+        "nextRunAtMs": 1775440800000,
+        "lastRunAtMs": 1775354581772,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 156949,
+        "lastDurationMs": 48931,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1775354400001
+        "runningAtMs": 1775440800001
       }
     },
     {
@@ -357,7 +357,7 @@
       "name": "dota2-ti-ticket-watch",
       "enabled": true,
       "createdAtMs": 1775106933793,
-      "updatedAtMs": 1775344565322,
+      "updatedAtMs": 1775430958005,
       "schedule": {
         "kind": "every",
         "everyMs": 21600000,
@@ -375,11 +375,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1775366135842,
-        "lastRunAtMs": 1775344535842,
+        "nextRunAtMs": 1775452535862,
+        "lastRunAtMs": 1775430935862,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 29480,
+        "lastDurationMs": 22143,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
