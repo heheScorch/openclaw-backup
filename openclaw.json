@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-29T10:01:14.004Z"
+    "lastTouchedAt": "2026-04-09T02:08:58.866Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-29T10:01:13.978Z",
+    "lastRunAt": "2026-04-09T02:08:58.834Z",
     "lastRunVersion": "2026.3.24",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -273,7 +273,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "minimax/MiniMax-M2.7",
+        "primary": "zai/glm-4.7",
         "fallbacks": [
           "zai/glm-5",
           "zai/glm-5-turbo",
@@ -290,8 +290,6 @@
           "alias": "Minimax"
         },
         "zai/glm-5-turbo": {},
-        "zai/glm-4.7-flash": {},
-        "zai/glm-4.7": {},
         "minimax/MiniMax-M2.7-highspeed": {}
       },
       "workspace": "/root/.openclaw/workspace",
