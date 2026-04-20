@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1774508122251,
-      "updatedAtMs": 1776560527085,
+      "updatedAtMs": 1776646990924,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -18,7 +18,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请运行 /root/.openclaw/scripts/steam_top30_full.js 脚本获取最新SteamTOP20数据，然后按格式：\n\n🎮 Steam 最热玩游戏 TOP 20\n\n🥇 #1 游戏名\n👥 当前: xxx | 📈 峰值: xxx\n\n依次列出前20名游戏。排序按当前在线人数。"
+        "message": "搜索Steam当前最热玩游戏TOP 20数据，用以下固定格式输出，不要添加任何其他文字：\n\n🎮 Steam 最热玩游戏 TOP 20\n\n🥇 #1 游戏名\n👥 当前: X | 📈 峰值: X\n\n🥈 #2 游戏名\n👥 当前: X | 📈 峰值: X\n\n🥉 #3 游戏名\n👥 当前: X | 📈 峰值: X\n\n#4 到 #20 同理，不带奖牌emoji。数据来源：https://store.steampowered.com/charts/mostplayed 或 steamdb.info"
       },
       "delivery": {
         "mode": "announce",
@@ -26,11 +26,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776646800000,
-        "lastRunAtMs": 1776560400007,
+        "nextRunAtMs": 1776733200000,
+        "lastRunAtMs": 1776646800012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 127078,
+        "lastDurationMs": 190912,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1774508122268,
-      "updatedAtMs": 1776517250805,
+      "updatedAtMs": 1776613828144,
       "schedule": {
         "kind": "cron",
         "expr": "0 21 * * *",
@@ -53,7 +53,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请运行 /root/.openclaw/scripts/steam_top30_full.js 脚本获取最新SteamTOP20数据，然后按格式：\n\n🎮 Steam 最热玩游戏 TOP 20\n\n🥇 #1 游戏名\n👥 当前: xxx | 📈 峰值: xxx\n\n依次列出前20名游戏。排序按当前在线人数。"
+        "message": "搜索Steam当前最热玩游戏TOP 20数据，用以下固定格式输出，不要添加任何其他文字：\n\n🎮 Steam 最热玩游戏 TOP 20\n\n🥇 #1 游戏名\n👥 当前: X | 📈 峰值: X\n\n🥈 #2 游戏名\n👥 当前: X | 📈 峰值: X\n\n🥉 #3 游戏名\n👥 当前: X | 📈 峰值: X\n\n#4 到 #20 同理，不带奖牌emoji。数据来源：https://store.steampowered.com/charts/mostplayed 或 steamdb.info"
       },
       "delivery": {
         "mode": "announce",
@@ -61,11 +61,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776603600000,
-        "lastRunAtMs": 1776517200006,
+        "nextRunAtMs": 1776690000000,
+        "lastRunAtMs": 1776603600008,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 50799,
+        "lastDurationMs": 93187,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -78,7 +78,7 @@
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1774508122285,
-      "updatedAtMs": 1776553218297,
+      "updatedAtMs": 1776639716059,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -88,7 +88,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "运行 /root/.openclaw/scripts/weather_hangzhou.js 脚本获取杭州天气，直接发送结果，不要加任何额外说明"
+        "message": "查询杭州今天和明天的天气，用以下格式输出，不要添加任何其他文字：\n\n🌤 杭州天气 | {今天日期}\n\n{天气图标} 天气状况 X°C / Y°C\n💧 湿度 X% · 🌬 风向 风力\n\n明天：\n{天气图标} 天气状况 X°C / Y°C\n💧 湿度 X% · 🌬 风向 风力"
       },
       "delivery": {
         "mode": "announce",
@@ -96,11 +96,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776639600000,
-        "lastRunAtMs": 1776553200004,
+        "nextRunAtMs": 1776726000000,
+        "lastRunAtMs": 1776639600009,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 18293,
+        "lastDurationMs": 116050,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -113,7 +113,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1774508122299,
-      "updatedAtMs": 1776477629905,
+      "updatedAtMs": 1776564043033,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -131,15 +131,15 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776564000000,
-        "lastRunAtMs": 1776477600006,
+        "nextRunAtMs": 1776650400000,
+        "lastRunAtMs": 1776564000006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 29899,
+        "lastDurationMs": 43027,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776564000001
+        "runningAtMs": 1776650400002
       }
     },
     {
@@ -149,7 +149,7 @@
       "name": "daily-global-news-morning",
       "enabled": true,
       "createdAtMs": 1774508122308,
-      "updatedAtMs": 1776556854638,
+      "updatedAtMs": 1776646453177,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -159,7 +159,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时\n\n## 新闻来源（按优先级）\n### 国际主流媒体\n- BBC、CNN、Reuters、AP、NYT、WSJ、Bloomberg\n\n### 中文媒体\n- 新华社、央视新闻、澎湃新闻、财新网、界面新闻、环球网\n\n### 重点区域\n- 亚洲、欧洲、北美洲\n\n### 重点领域\n- 科技、财经、政治、国际关系、重大事件\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-8条\n- 每条：标题、来源、简要摘要（50字内）\n- 最后简短总结今日热点（2-3句话）\n\n## 注意事项\n- 平衡中外来源，确保有中国视角的新闻\n- 只收集真实新闻，排除推测文章"
+        "message": "搜索今天全球重要新闻，严格按以下格式输出，禁止输出任何思考过程、搜索过程或多余描述：\n\n📰 全球新闻早报 | {今天日期}\n\n1. 标题\n   来源 · 摘要\n\n2. 标题\n   来源 · 摘要\n\n3. 标题\n   来源 · 摘要\n\n4. 标题\n   来源 · 摘要\n\n5. 标题\n   来源 · 摘要\n\n6. 标题\n   来源 · 摘要\n\n7. 标题\n   来源 · 摘要\n\n8. 标题\n   来源 · 摘要\n\n列出5-8条重要新闻。"
       },
       "delivery": {
         "mode": "announce",
@@ -167,11 +167,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776643200000,
-        "lastRunAtMs": 1776556800006,
+        "nextRunAtMs": 1776729600000,
+        "lastRunAtMs": 1776643200006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 54632,
+        "lastDurationMs": 68949,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -184,7 +184,7 @@
       "name": "daily-global-news-evening",
       "enabled": true,
       "createdAtMs": 1774508122321,
-      "updatedAtMs": 1776513649204,
+      "updatedAtMs": 1776646468850,
       "schedule": {
         "kind": "cron",
         "expr": "0 20 * * *",
@@ -194,7 +194,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去12小时内的全球重点新闻，具体要求：\n\n## 时间范围\n- 新闻发布时间：过去12小时\n\n## 新闻来源（按优先级）\n### 国际主流媒体\n- BBC、CNN、Reuters、AP、NYT、WSJ、Bloomberg\n\n### 中文媒体\n- 新华社、央视新闻、澎湃新闻、财新网、界面新闻、环球网\n\n### 重点区域\n- 亚洲、欧洲、北美洲\n\n### 重点领域\n- 科技、财经、政治、国际关系、重大事件\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-8条\n- 每条：标题、来源、简要摘要（50字内）\n- 最后简短总结今日热点（2-3句话）\n\n## 注意事项\n- 平衡中外来源\n确保有中国视角的新闻\n- 只收集真实新闻\n排除推测文章"
+        "message": "搜索今天全球重要新闻，严格按以下格式输出，禁止输出任何思考过程、搜索过程或多余描述：\n\n📰 全球新闻晚报 | {今天日期}\n\n1. 标题\n   来源 · 摘要\n\n2. 标题\n   来源 · 摘要\n\n3. 标题\n   来源 · 摘要\n\n4. 标题\n   来源 · 摘要\n\n5. 标题\n   来源 · 摘要\n\n6. 标题\n   来源 · 摘要\n\n7. 标题\n   来源 · 摘要\n\n8. 标题\n   来源 · 摘要\n\n列出5-8条重要新闻。"
       },
       "delivery": {
         "mode": "announce",
@@ -202,11 +202,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776600000000,
-        "lastRunAtMs": 1776513600008,
+        "nextRunAtMs": 1776686400000,
+        "lastRunAtMs": 1776600000011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 49196,
+        "lastDurationMs": 74147,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -219,7 +219,7 @@
       "name": "daily-gaming-news-noon",
       "enabled": true,
       "createdAtMs": 1774508122332,
-      "updatedAtMs": 1776484896886,
+      "updatedAtMs": 1776613866664,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -229,7 +229,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去24小时内的游戏行业新闻，具体要求：\n\n## 时间范围\n- 过去24小时\n\n## 新闻来源（按优先级）\n### 国际媒体\n- GamesIndustry.biz、GameSpot、IGN、Polygon、Game Developer、Kotaku\n\n### 中文媒体\n- 游研社、游民星空、游戏葡萄、3DM、17173、电玩巴士\n\n## 收集内容\n1. 重大新闻：3A大作、收购并购、财报、新游戏发布\n2. 公司动态：游戏公司重要动向\n3. 市场数据：销量、玩家数据\n4. 产品信息：新游戏、更新、DLC\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-8条\n- 每条：标题、来源、简要摘要\n- 最后总结3个今日热点\n\n## 注意事项\n- 平衡中外来源，确保有国产游戏动态\n- 只收集真实新闻，简洁明了"
+        "message": "搜索今天游戏行业重要新闻，用以下格式输出，不要添加任何其他文字：\n\n🎮 游戏新闻 | {今天日期}\n\n1. 标题\n   来源 · 一句话摘要\n\n2. 标题\n   来源 · 一句话摘要\n\n列出5-8条。"
       },
       "delivery": {
         "mode": "announce",
@@ -237,11 +237,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776571200000,
-        "lastRunAtMs": 1776484800007,
+        "nextRunAtMs": 1776657600000,
+        "lastRunAtMs": 1776571200009,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 96879,
+        "lastDurationMs": 34854,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -254,7 +254,7 @@
       "name": "openclaw-update-check",
       "enabled": true,
       "createdAtMs": 1774508122365,
-      "updatedAtMs": 1776322594530,
+      "updatedAtMs": 1776581802103,
       "schedule": {
         "kind": "every",
         "everyMs": 259200000,
@@ -272,11 +272,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776581722399,
-        "lastRunAtMs": 1776322522399,
+        "nextRunAtMs": 1776840922406,
+        "lastRunAtMs": 1776581722406,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 72131,
+        "lastDurationMs": 79697,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -288,7 +288,7 @@
       "name": "daily-ai-news-evening",
       "enabled": true,
       "createdAtMs": 1774546056305,
-      "updatedAtMs": 1776506482480,
+      "updatedAtMs": 1776613879376,
       "schedule": {
         "kind": "cron",
         "expr": "0 18 * * *",
@@ -298,7 +298,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我收集过去24小时内的AI行业新闻，具体要求：\n\n## 时间范围\n- 过去24小时\n\n## 新闻来源（按优先级）\n### 国际媒体\n- TechCrunch、The Verge、Wired、Ars Technica\n- VentureBeat AI、MIT Tech Review\n\n### 中文媒体\n- 36氪、机器之心、量子位、InfoQ中文\n- AI科技评论、新智元、智东西\n\n## 重点领域\n1. 大模型：GPT、Claude、Gemini、LLaMA、国产大模型\n2. AI应用：新产品、新工具、新服务\n3. AI芯片：NVIDIA、AMD、Intel、国产芯片\n4. 投融资：融资、并购、IPO\n5. 政策法规：AI监管、政策变化\n6. 研究突破：重要论文、技术进展\n\n## 输出格式\n- 中文输出\n- 按重要性排序5-10条\n- 每条：标题、来源、简要摘要\n- 最后加「今日AI热点」总结（2-3句话）\n\n## 注意事项\n- 平衡中外来源，确保有国产AI动态\n- 只收集真实新闻"
+        "message": "搜索今天AI领域重要新闻，用以下格式输出，不要添加任何其他文字：\n\n🤖 AI 动态 | {今天日期}\n\n1. 标题\n   来源 · 一句话摘要\n\n2. 标题\n   来源 · 一句话摘要\n\n列出5-8条。"
       },
       "delivery": {
         "mode": "announce",
@@ -306,11 +306,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776592800000,
-        "lastRunAtMs": 1776506400010,
+        "nextRunAtMs": 1776679200000,
+        "lastRunAtMs": 1776592800010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 82470,
+        "lastDurationMs": 134161,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -322,7 +322,7 @@
       "name": "daily-ai-github-trends",
       "enabled": true,
       "createdAtMs": 1774947785126,
-      "updatedAtMs": 1776477725335,
+      "updatedAtMs": 1776613895012,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -332,7 +332,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请帮我搜索 GitHub 上 AI 相关的热门开源项目，要求：\n\n## 搜索范围\n1. 高 Star 项目：Star 数 > 5000 的 AI/ML 相关项目\n2. 快速增长项目：近7天内 Star 增长 > 500 的 AI/ML 项目\n\n## 重点领域\n- 大模型（LLM、多模态）\n- AI Agent / 框架\n- AI 工具链（推理、训练、部署）\n- 开源模型权重\n- AI 应用（图像、音频、视频、代码）\n\n## 输出格式\n每个项目：\n- **项目名** (Stars: xxx, ⬆️ +xxx this week)\n- 简介：一句话说明\n- 链接：GitHub URL\n\n选出 5-8 个最有价值的项目，按近期热度排序。\n\n## 注意事项\n- 只要 GitHub 项目，不要文章或教程\n- 优先展示有实际价值、活跃维护的项目\n- 中文输出"
+        "message": "搜索GitHub上最近热门的AI相关项目，用以下格式输出，不要添加任何其他文字：\n\n⚡ GitHub AI 趋势 | {今天日期}\n\n1. repo/name — ⭐Xk\n   一句话描述\n\n2. repo/name — ⭐Xk\n   一句话描述\n\n列出5-8个。"
       },
       "delivery": {
         "mode": "announce",
@@ -340,15 +340,15 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776564000000,
-        "lastRunAtMs": 1776477629905,
+        "nextRunAtMs": 1776650400000,
+        "lastRunAtMs": 1776564043033,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 95430,
+        "lastDurationMs": 73548,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776564000001
+        "runningAtMs": 1776650400002
       }
     },
     {
@@ -357,7 +357,7 @@
       "name": "dota2-ti-ticket-watch",
       "enabled": true,
       "createdAtMs": 1775106933793,
-      "updatedAtMs": 1776554173717,
+      "updatedAtMs": 1776645891304,
       "schedule": {
         "kind": "every",
         "everyMs": 21600000,
@@ -367,7 +367,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "搜索 2026 Dota2 上海国际邀请赛(TI15)门票相关新闻，重点关注：\n- 门票是否已开售\n- 票价信息\n- 购票渠道\n- 购票链接\n\n任务要求\n1. 如果门票还未开售\n回复 NO_TICKET_NEWS\n2. 如果门票已开售或有新消息，推送以下格式\n🎫 TI15 门票信息\n- 开售时间\n- 票价\n- 购票渠道\n- 购票链接\n\n只搜索官方渠道\n搜索关键词\n2026 Dota2 上海国际邀请赛赛 TI 门票"
+        "message": "搜索TI15 DOTA2门票开售信息。规则：1.只有确切的开售时间/票价/链接才输出 2.没有任何具体信息则不输出任何内容 3.禁止输出思考过程、搜索过程、解释说明 4.格式：🎫 TI15 门票信息\\n开售时间：X\\n票价：X\\n购买链接：X"
       },
       "delivery": {
         "mode": "announce",
@@ -375,11 +375,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776575736215,
-        "lastRunAtMs": 1776554136215,
+        "nextRunAtMs": 1776662136241,
+        "lastRunAtMs": 1776640536241,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 37502,
+        "lastDurationMs": 19161,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
