@@ -8,7 +8,7 @@
       "name": "steam-top20-morning",
       "enabled": true,
       "createdAtMs": 1774508122251,
-      "updatedAtMs": 1776819764149,
+      "updatedAtMs": 1776906075655,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -18,7 +18,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "读取技能 steam-top20 的 SKILL.md，按其指示获取 Steam TOP 20 数据并格式化输出。"
+        "message": "读取技能 steam-top20 的 SKILL.md，按其指示获取 Steam TOP 20 数据并格式化输出。",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -26,11 +27,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776906000000,
-        "lastRunAtMs": 1776819600005,
+        "nextRunAtMs": 1776992400000,
+        "lastRunAtMs": 1776906000023,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 164144,
+        "lastDurationMs": 75632,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +44,7 @@
       "name": "steam-top20-evening",
       "enabled": true,
       "createdAtMs": 1774508122268,
-      "updatedAtMs": 1776776480684,
+      "updatedAtMs": 1776905954840,
       "schedule": {
         "kind": "cron",
         "expr": "0 21 * * *",
@@ -53,7 +54,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "读取技能 steam-top20 的 SKILL.md，按其指示获取 Steam TOP 20 数据并格式化输出。"
+        "message": "读取技能 steam-top20 的 SKILL.md，按其指示获取 Steam TOP 20 数据并格式化输出。",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -61,11 +63,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776862800000,
-        "lastRunAtMs": 1776776400014,
+        "nextRunAtMs": 1776949200000,
+        "lastRunAtMs": 1776862800004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 80670,
+        "lastDurationMs": 35951,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -78,7 +80,7 @@
       "name": "hangzhou-weather-morning",
       "enabled": true,
       "createdAtMs": 1774508122285,
-      "updatedAtMs": 1776812465647,
+      "updatedAtMs": 1776905970071,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * *",
@@ -88,7 +90,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "查询杭州今天和明天的天气，用以下格式输出，不要添加任何其他文字：\n\n🌤 杭州天气 | {今天日期}\n\n{天气图标} 天气状况 X°C / Y°C\n💧 湿度 X% · 🌬 风向 风力\n\n明天：\n{天气图标} 天气状况 X°C / Y°C\n💧 湿度 X% · 🌬 风向 风力"
+        "message": "查询杭州今天和明天的天气，用以下格式输出，不要添加任何其他文字：\n\n🌤 杭州天气 | {今天日期}\n\n{天气图标} 天气状况 X°C / Y°C\n💧 湿度 X% · 🌬 风向 风力\n\n明天：\n{天气图标} 天气状况 X°C / Y°C\n💧 湿度 X% · 🌬 风向 风力",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -96,11 +99,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776898800000,
-        "lastRunAtMs": 1776812400006,
+        "nextRunAtMs": 1776985200000,
+        "lastRunAtMs": 1776898800006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 65641,
+        "lastDurationMs": 41645,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -113,7 +116,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1774508122299,
-      "updatedAtMs": 1776736852260,
+      "updatedAtMs": 1776905876149,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -123,7 +126,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请执行 /root/.openclaw/scripts/backup_to_github.sh 脚本，它会自动备份并推送到 GitHub。完成后告诉我 \"每日备份已完成\""
+        "message": "请执行 /root/.openclaw/scripts/backup_to_github.sh 脚本，它会自动备份并推送到 GitHub。完成后告诉我 \"每日备份已完成\"",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -131,15 +135,15 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776823200000,
-        "lastRunAtMs": 1776736800005,
+        "nextRunAtMs": 1776909600000,
+        "lastRunAtMs": 1776823200007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 52255,
+        "lastDurationMs": 24793,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776823200002
+        "runningAtMs": 1776909600001
       }
     },
     {
@@ -149,7 +153,7 @@
       "name": "daily-global-news-morning",
       "enabled": true,
       "createdAtMs": 1774508122308,
-      "updatedAtMs": 1776816049771,
+      "updatedAtMs": 1776905827634,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -159,7 +163,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "搜索今天全球重要新闻，严格按以下格式输出，禁止输出任何思考过程、搜索过程或多余描述：\n\n📰 全球新闻早报 | {今天日期}\n\n1. 标题\n   来源 · 摘要\n\n2. 标题\n   来源 · 摘要\n\n3. 标题\n   来源 · 摘要\n\n4. 标题\n   来源 · 摘要\n\n5. 标题\n   来源 · 摘要\n\n6. 标题\n   来源 · 摘要\n\n7. 标题\n   来源 · 摘要\n\n8. 标题\n   来源 · 摘要\n\n列出5-8条重要新闻。"
+        "message": "搜索今天全球重要新闻，严格按以下格式输出，禁止输出任何思考过程、搜索过程或多余描述：\n\n📰 全球新闻早报 | {今天日期}\n\n1. 标题\n   来源 · 摘要\n\n2. 标题\n   来源 · 摘要\n\n3. 标题\n   来源 · 摘要\n\n4. 标题\n   来源 · 摘要\n\n5. 标题\n   来源 · 摘要\n\n6. 标题\n   来源 · 摘要\n\n7. 标题\n   来源 · 摘要\n\n8. 标题\n   来源 · 摘要\n\n列出5-8条重要新闻。",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -167,13 +172,13 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776902400000,
-        "lastRunAtMs": 1776816000007,
+        "nextRunAtMs": 1776988800000,
+        "lastRunAtMs": 1776902400007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 49764,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
+        "lastDurationMs": 56162,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
     },
@@ -184,7 +189,7 @@
       "name": "daily-global-news-evening",
       "enabled": true,
       "createdAtMs": 1774508122321,
-      "updatedAtMs": 1776772847143,
+      "updatedAtMs": 1776905938940,
       "schedule": {
         "kind": "cron",
         "expr": "0 20 * * *",
@@ -194,7 +199,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "搜索今天全球重要新闻，严格按以下格式输出，禁止输出任何思考过程、搜索过程或多余描述：\n\n📰 全球新闻晚报 | {今天日期}\n\n1. 标题\n   来源 · 摘要\n\n2. 标题\n   来源 · 摘要\n\n3. 标题\n   来源 · 摘要\n\n4. 标题\n   来源 · 摘要\n\n5. 标题\n   来源 · 摘要\n\n6. 标题\n   来源 · 摘要\n\n7. 标题\n   来源 · 摘要\n\n8. 标题\n   来源 · 摘要\n\n列出5-8条重要新闻。"
+        "message": "搜索今天全球重要新闻，严格按以下格式输出，禁止输出任何思考过程、搜索过程或多余描述：\n\n📰 全球新闻晚报 | {今天日期}\n\n1. 标题\n   来源 · 摘要\n\n2. 标题\n   来源 · 摘要\n\n3. 标题\n   来源 · 摘要\n\n4. 标题\n   来源 · 摘要\n\n5. 标题\n   来源 · 摘要\n\n6. 标题\n   来源 · 摘要\n\n7. 标题\n   来源 · 摘要\n\n8. 标题\n   来源 · 摘要\n\n列出5-8条重要新闻。",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -202,14 +208,15 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776859200000,
-        "lastRunAtMs": 1776772800004,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 47139,
+        "nextRunAtMs": 1776945600000,
+        "lastRunAtMs": 1776859200008,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 338733,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "terminated"
       }
     },
     {
@@ -219,7 +226,7 @@
       "name": "daily-gaming-news-noon",
       "enabled": true,
       "createdAtMs": 1774508122332,
-      "updatedAtMs": 1776744047369,
+      "updatedAtMs": 1776905892142,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -229,7 +236,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "搜索今天游戏行业重要新闻，用以下格式输出，不要添加任何其他文字：\n\n🎮 游戏新闻 | {今天日期}\n\n1. 标题\n   来源 · 一句话摘要\n\n2. 标题\n   来源 · 一句话摘要\n\n列出5-8条。"
+        "message": "搜索今天游戏行业重要新闻，用以下格式输出，不要添加任何其他文字：\n\n🎮 游戏新闻 | {今天日期}\n\n1. 标题\n   来源 · 一句话摘要\n\n2. 标题\n   来源 · 一句话摘要\n\n列出5-8条。",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -237,11 +245,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776830400000,
-        "lastRunAtMs": 1776744000005,
+        "nextRunAtMs": 1776916800000,
+        "lastRunAtMs": 1776830400009,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 47364,
+        "lastDurationMs": 87267,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -254,7 +262,7 @@
       "name": "openclaw-update-check",
       "enabled": true,
       "createdAtMs": 1774508122365,
-      "updatedAtMs": 1776581802103,
+      "updatedAtMs": 1776905986225,
       "schedule": {
         "kind": "every",
         "everyMs": 259200000,
@@ -264,7 +272,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "请检查 OpenClaw 是否有新版本：\n1. 运行 /root/.openclaw/scripts/check_update.sh\n2. 如果有新版本，告诉我更新日志\n3. 问我是否要更新"
+        "message": "请检查 OpenClaw 是否有新版本：\n1. 运行 /root/.openclaw/scripts/check_update.sh\n2. 如果有新版本，告诉我更新日志\n3. 问我是否要更新",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -272,11 +281,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776840922406,
-        "lastRunAtMs": 1776581722406,
+        "nextRunAtMs": 1777100122413,
+        "lastRunAtMs": 1776840922413,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 79697,
+        "lastDurationMs": 89394,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -288,7 +297,7 @@
       "name": "daily-ai-news-evening",
       "enabled": true,
       "createdAtMs": 1774546056305,
-      "updatedAtMs": 1776765647596,
+      "updatedAtMs": 1776905923437,
       "schedule": {
         "kind": "cron",
         "expr": "0 18 * * *",
@@ -298,7 +307,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "搜索今天AI领域重要新闻，用以下格式输出，不要添加任何其他文字：\n\n🤖 AI 动态 | {今天日期}\n\n1. 标题\n   来源 · 一句话摘要\n\n2. 标题\n   来源 · 一句话摘要\n\n列出5-8条。"
+        "message": "搜索今天AI领域重要新闻，用以下格式输出，不要添加任何其他文字：\n\n🤖 AI 动态 | {今天日期}\n\n1. 标题\n   来源 · 一句话摘要\n\n2. 标题\n   来源 · 一句话摘要\n\n列出5-8条。",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -306,11 +316,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776852000000,
-        "lastRunAtMs": 1776765600005,
+        "nextRunAtMs": 1776938400000,
+        "lastRunAtMs": 1776852000007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 47591,
+        "lastDurationMs": 108555,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -322,7 +332,7 @@
       "name": "daily-ai-github-trends",
       "enabled": true,
       "createdAtMs": 1774947785126,
-      "updatedAtMs": 1776736941964,
+      "updatedAtMs": 1776905859844,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * *",
@@ -332,7 +342,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "搜索GitHub上最近热门的AI相关项目，用以下格式输出，不要添加任何其他文字：\n\n⚡ GitHub AI 趋势 | {今天日期}\n\n1. repo/name — ⭐Xk\n   一句话描述\n\n2. repo/name — ⭐Xk\n   一句话描述\n\n列出5-8个。"
+        "message": "搜索GitHub上最近热门的AI相关项目，用以下格式输出，不要添加任何其他文字：\n\n⚡ GitHub AI 趋势 | {今天日期}\n\n1. repo/name — ⭐Xk\n   一句话描述\n\n2. repo/name — ⭐Xk\n   一句话描述\n\n列出5-8个。",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -340,15 +351,15 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776823200000,
-        "lastRunAtMs": 1776736852260,
+        "nextRunAtMs": 1776909600000,
+        "lastRunAtMs": 1776823224800,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 89704,
+        "lastDurationMs": 41227,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776823200002
+        "runningAtMs": 1776909600001
       }
     },
     {
@@ -357,7 +368,7 @@
       "name": "dota2-ti-ticket-watch",
       "enabled": true,
       "createdAtMs": 1775106933793,
-      "updatedAtMs": 1776813350766,
+      "updatedAtMs": 1776905907862,
       "schedule": {
         "kind": "every",
         "everyMs": 21600000,
@@ -367,7 +378,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "搜索TI15 DOTA2门票开售信息。规则：1.只有确切的开售时间/票价/链接才输出 2.没有任何具体信息则不输出任何内容 3.禁止输出思考过程、搜索过程、解释说明 4.格式：🎫 TI15 门票信息\\n开售时间：X\\n票价：X\\n购买链接：X"
+        "message": "搜索TI15 DOTA2门票开售信息。规则：1.只有确切的开售时间/票价/链接才输出 2.没有任何具体信息则不输出任何内容 3.禁止输出思考过程、搜索过程、解释说明 4.格式：🎫 TI15 门票信息\\n开售时间：X\\n票价：X\\n购买链接：X",
+        "thinking": "off"
       },
       "delivery": {
         "mode": "announce",
@@ -375,11 +387,11 @@
         "to": "5220650531"
       },
       "state": {
-        "nextRunAtMs": 1776834936299,
-        "lastRunAtMs": 1776813336299,
+        "nextRunAtMs": 1776921336336,
+        "lastRunAtMs": 1776899736336,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 14467,
+        "lastDurationMs": 53057,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0

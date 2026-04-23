@@ -1,11 +1,11 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.10",
-    "lastTouchedAt": "2026-04-11T05:01:00.930Z"
+    "lastTouchedAt": "2026-04-22T03:41:33.697Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-09T02:08:58.834Z",
-    "lastRunVersion": "2026.3.24",
+    "lastRunAt": "2026-04-22T03:41:33.407Z",
+    "lastRunVersion": "2026.4.10",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
   },
@@ -22,6 +22,10 @@
       "minimax:cn": {
         "provider": "minimax",
         "mode": "api_key"
+      },
+      "minimax-portal:default": {
+        "provider": "minimax-portal",
+        "mode": "oauth"
       }
     }
   },
@@ -217,27 +221,32 @@
             "maxTokens": 131072
           }
         ]
+      },
+      "minimax-portal": {
+        "baseUrl": "https://api.minimaxi.com/anthropic",
+        "models": []
       }
     }
   },
   "agents": {
     "defaults": {
       "model": {
-        "primary": "zai/glm-5-turbo",
+        "primary": "minimax-portal/MiniMax-M2.7",
         "fallbacks": [
-          "zai/glm-5",
-          "minimax/MiniMax-M2.7-highspeed"
+          "minimax-portal/MiniMax-M2.7-highspeed",
+          "minimax/MiniMax-M2.7-highspeed",
+          "minimax/MiniMax-M2.7"
         ]
       },
       "models": {
-        "zai/glm-5": {
-          "alias": "GLM"
+        "minimax/MiniMax-M2.7": {},
+        "minimax/MiniMax-M2.7-highspeed": {},
+        "minimax-portal/MiniMax-M2.7": {
+          "alias": "minimax-m2.7"
         },
-        "minimax/MiniMax-M2.7": {
-          "alias": "Minimax"
-        },
-        "zai/glm-5-turbo": {},
-        "minimax/MiniMax-M2.7-highspeed": {}
+        "minimax-portal/MiniMax-M2.7-highspeed": {
+          "alias": "minimax-m2.7-highspeed"
+        }
       },
       "workspace": "/root/.openclaw/workspace",
       "compaction": {
@@ -254,7 +263,11 @@
     "web": {
       "search": {
         "enabled": true,
-        "provider": "minimax"
+        "provider": "minimax",
+        "openaiCodex": {}
+      },
+      "fetch": {
+        "enabled": true
       }
     },
     "sessions": {
